@@ -2,32 +2,108 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+html {
+	scroll-behavior: smooth;
+	scroll-padding-top: 80px;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+@media (max-width: 1024px) {
+	html {
+		scroll-padding-top: 70px; /* Padding for screens smaller than 1024px */
+	}
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.body {
+	background-position: fixed;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+button {
+	@apply rounded-md px-3 py-2 transition delay-150 duration-300 hover:scale-105 flex gap-2 items-center shadow-md;
+}
+
+.btn-primary {
+	@apply bg-primary text-white;
+}
+
+.btn-outline {
+	@apply border-2 border-primary bg-secondary text-primary;
+}
+
+h1 {
+	@apply text-4xl sm:text-6xl font-semibold mb-3;
+}
+
+h2 {
+	@apply text-lg sm:text-xl font-semibold mb-3;
+}
+
+.box {
+	@apply bg-secondary text-white rounded-xl p-5;
+}
+
+img {
+	@apply max-w-[100%] max-h-[100%];
+}
+
+.screen {
+	min-height: calc(100vh - 80px);
+}
+
+@media (max-width: 1024px) {
+	.bg-image::before {
+		background-size: cover;
+		background-position: center;
+		background-image: url("https://www.researchgate.net/publication/374151532/figure/fig2/AS:11431281190985334@1695559626486/Left-Ernest-Rutherford-1871-1937-Right-Rutherford-in-his-laboratory-at-McGill.ppm");
+		content: "";
+		position: absolute;
+		border-radius: 10px;
+		inset: 0;
+		opacity: 0.3;
+	}
+
+	.screen {
+		min-height: calc(100vh - 70px);
+	}
+}
+
+/* #Oferta::before, #Kołoolimpijskie::before {
+	background-size: cover;
+	background-position: center;
+	background-image: url("https://images.unsplash.com/photo-1635070041078-e363dbe005cb?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+	content: "";
+	position: absolute;
+	inset: 0;
+	border-radius: 10px;
+	opacity: 0.25;
+	z-index: -1;
+} */
+
+body::before {
+	content: "";
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	background-position: center;
+	background-image: url("https://images.unsplash.com/photo-1635070041078-e363dbe005cb?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	opacity: 0.25;
+	z-index: -1;
+}
+
+input,
+textarea,
+select {
+	@apply bg-[#dddddd] border-2 border-gray-500 rounded-md p-2 focus:outline-none focus:border-primary mb-1 w-full shadow-md text-black;
+}
+
+label {
+	@apply text-gray-500;
+}
+
+.color {
+    color: #dddddd;
 }
