@@ -5,7 +5,7 @@ import { FaQuoteRight } from "react-icons/fa";
 
 export default function Hero() {
 	return (
-		<div className="p-5 bg-black text-white flex justify-center screen">
+		<div id="Hero" className="p-5 bg-black text-white flex justify-center screen">
 			<div className="grid lg:grid-cols-2 xl:grid-cols-3 gap-[40px] items-center xl:items-start">
 				<motion.div
 					variants={fadeIn("right", "spring", 0.3, 1)}

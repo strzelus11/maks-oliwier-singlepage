@@ -10,24 +10,28 @@ export default function ContactPage() {
 	const [message, setMessage] = useState("");
 
 	async function sendEmail() {
-		const response = await fetch("/api/send", {
-			method: "POST",
-			headers: {
-				"Content-Type": "application/json",
-			},
-			body: JSON.stringify({
-				name,
-				email,
-				message,
-			}),
-		});
+		if (name !== "" && email !== "" && message !== "") {
+			const response = await fetch("/api/send", {
+				method: "POST",
+				headers: {
+					"Content-Type": "application/json",
+				},
+				body: JSON.stringify({
+					name,
+					email,
+					message,
+				}),
+			});
 
-		const data = await response.json();
-		if (response.ok) {
-            console.log("Email sent successfully:", data);
-            toast.success("Wiadomość wysłana pomyślnie.")
+			const data = await response.json();
+			if (response.ok) {
+				console.log("Email sent successfully:", data);
+				toast.success("Wiadomość wysłana pomyślnie.");
+			} else {
+				console.error("Error sending email:", data.error);
+			}
 		} else {
-			console.error("Error sending email:", data.error);
+			toast.error("Uzupełnij wszystkie pola.");
 		}
 	}
 	return (
@@ -62,7 +66,7 @@ export default function ContactPage() {
 					></textarea>
 					<button
 						onClick={() => sendEmail()}
-						className="btn-outline hover:scale-100 hover:opacity-90 w-full flex justify-center"
+						className="btn-outline hover:scale-100 hover:bg-black w-full flex justify-center"
 					>
 						Send
 					</button>

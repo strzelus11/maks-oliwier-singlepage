@@ -19,8 +19,8 @@ const Header = () => {
 	return (
 		<>
 			<header className="fixed top-0 w-full hidden lg:flex justify-around h-[80px] items-center bg-secondary text-white z-[10]">
-				<Link href={"/"}>
-					<img className="mt-[30px] h-[200px]" src="./file.png" alt="" />
+				<Link href={"/#Hero"}>
+					<img className="h-[80px]" src="./file.png" alt="" />
 				</Link>
 				<nav className="flex gap-10">
 					{links.map((link) => (
@@ -39,7 +39,7 @@ const Header = () => {
 				<ContactButton />
 			</header>
 			<header
-				className={`w-full lg:hidden fixed z-10 flex justify-around h-[70px] items-center transition delay-50 duration-500 ${
+				className={`w-full lg:hidden fixed top-0 z-10 flex justify-around h-[70px] items-center transition delay-50 duration-500 ${
 					navOpen ? "bg-black" : "bg-secondary"
 				} text-white`}
 			>
@@ -57,8 +57,8 @@ const Header = () => {
 						/>
 					</svg>
 				</div>
-				<Link href={"/"}>
-					<img className="mt-[35px] h-[200px]" src="./file.png" alt="" />
+				<Link href={"/#Hero"}>
+					<img className="h-[70px]" src="./file.png" alt="" />
 				</Link>
 				<ContactButton className="hidden sm:flex" />
 				<AnimatePresence>
@@ -88,7 +88,7 @@ const Header = () => {
 								</svg>
 							</div>
 							<div className="flex flex-col justify-between items-start mt-[100px]">
-								<nav className="flex flex-col gap-10 justify-center mb-10">
+								<nav className="flex flex-col gap-10 justify-center mb-10 text-xl">
 									{links.map((link) => (
 										<Link
 											onClick={() => setNavOpen(false)}

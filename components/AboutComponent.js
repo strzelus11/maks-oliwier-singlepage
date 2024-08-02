@@ -1,4 +1,3 @@
-import AboutCard from "./AboutCard";
 import PersonComponent from "./PersonComponent";
 import SectionLayout from "./SectionLayout";
 
@@ -14,8 +13,23 @@ const oliwierAchiev = [
 	"1. klasa liceum (2019/2020) – finalista Olimpiady Fizycznej (finał się nie odbył ze względu na Covid19), półfinalista Turnieju Młodych Fizyków, 2. miejsce w konkursie fizycznym Lwiątko, pierwsza nagroda w Wielkopolskiej Lidze Matematycznej",
 	"3. klasa liceum (2020/2021) – finalista Olimpiady Matematycznej, półfinalista Turnieju Młodych Fizyków, pierwsza nagroda w Wielkopolskiej Lidze Matematycznej, 2. miejsce w konkursie Physics Cup",
 	"1. rok studiów (kierunek fizyka, Uniwersytet im. Adama Mickiewicza w Poznaniu) (2021/2022) – indywidualny projekt: badania nad fizyką windsurfingu na hydroskrzydłach",
-	"2. rok studiów (2022/2023) – członek jury w Wielkopolskiej Superlidze Liceów z fizyki i współautor zadań (link do filmu z rozwiązywaniem zadań na żywo), zdobycie pierwszej nagrody i wyróżnienia w międzynarodowym konkursie Mandles Prize for Hydrofoil Excellence za artykuły z badań na temat windsurfingu na hydroskrzydłach (link do prac)",
+	"2. rok studiów (2022/2023) – członek jury w Wielkopolskiej Superlidze Liceów z fizyki i współautor zadań, zdobycie pierwszej nagrody i wyróżnienia w międzynarodowym konkursie Mandles Prize for Hydrofoil Excellence za artykuły z badań na temat windsurfingu na hydroskrzydłach",
 	"3. rok studiów (2023/2024) – praca nad licencjatem z silnie skorelowanych układów kwantowych wielu ciał",
+];
+
+const links = [
+	{
+		url: "http://youtube.com/watch?v=PyaIPvBkmwE&ab_channel=InternationalWindsurfingAssociation",
+		text: "Formuła Windsurfing Foil",
+	},
+	{
+		url: "https://www.youtube.com/watch?v=VBRi9CZJd8Q&t=2740s&ab_channel=CSW2030",
+		text: "Film z rozwiązywaniem zadań na żywo",
+	},
+	{
+		url: "https://foils.org/mandles-prize/2023-winner-announcement-and-papers/",
+		text: "Artykuły z badań na temat windsurfingu na hydroskrzydłach",
+	},
 ];
 
 export default function AboutComponent() {
@@ -24,7 +38,8 @@ export default function AboutComponent() {
 			<div className="flex flex-col gap-10">
 				<PersonComponent
 					name="Oliwier Urbański"
-					text="Fizyka jest moją największą pasją. Interesuję się fizyką statystyczną, kwantowymi układami wielu ciał oraz fizyką żeglarstwa. W wolnych chwilach trenuję na klasie Formuła Windsurfing Foil (link do filmiku pokazującego co to)."
+                    text="Fizyka jest moją największą pasją. Interesuję się fizyką statystyczną, kwantowymi układami wielu ciał oraz fizyką żeglarstwa. W wolnych chwilach trenuję na klasie Formuła Windsurfing Foil."
+                    links={links}
 					achievements={oliwierAchiev}
 				/>
 				<PersonComponent

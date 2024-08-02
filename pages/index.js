@@ -6,20 +6,22 @@ import Tutoring from "@/components/Tutoring";
 
 export default function Home() {
 	return (
-		<div className="flex flex-col">
+		<div className="flex flex-col mt-[70px] lg:mt-[80px] h-screen overflow-y-scroll snap-y snap-mandatory scroll-smooth">
 			<Header />
-			<div className="mt-[70px] lg:mt-[80px]">
-				<Hero />
+			<div className="flex-1">
+				<div className="min-h-screen snap-center">
+					<Hero />
+				</div>
+				<div className="min-h-screen snap-center">
+					<Tutoring />
+				</div>
+				<div className="min-h-screen snap-center">
+					<Olimpic />
+				</div>
+				<div className="min-h-screen snap-center">
+					<Offer />
+				</div>
 			</div>
-			<div>
-                <Tutoring />
-            </div>
-			<div>
-                <Olimpic />
-            </div>
-			<div>
-                <Offer />
-            </div>
 		</div>
 	);
 }

@@ -24,7 +24,7 @@ export default function OfferCard({
 			variants={fadeIn("down", "spring", 0.1 * index, 1)}
 			initial="hidden"
 			animate="show"
-			className="box flex flex-col items-center justify-between shadow-2xl transition-all delay-100 duration-300 h-[25rem] border-2 border-gray-500"
+			className="box flex flex-col items-center justify-between shadow-2xl transition-all delay-100 duration-300 h-[25rem] border-2 border-primary"
 		>
 			<div className="h-20">
 				<h2 className="text-center text-2xl font-semibold">{title}</h2>

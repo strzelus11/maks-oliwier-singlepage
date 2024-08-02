@@ -12,7 +12,7 @@ export default function Offer() {
 					<OfferCard
 						title="Korepetycje z fizyki"
 						subtitle="(poziom liceum i studiów)"
-						price={99.99}
+						price={100}
 						time="h"
 						group={false}
 						index={0}

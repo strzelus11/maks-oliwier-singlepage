@@ -1,12 +1,14 @@
+import Link from "next/link";
 import SVG from "./SVG";
+import React from "react";
 
-export default function PersonComponent({ name, text, achievements }) {
+export default function PersonComponent({ name, text, achievements, links }) {
 	return (
 		<div className="bg-secondary p-5 rounded-xl">
 			<div className="flex items-center flex-col sm:flex-row gap-10 sm:items-start">
-				<div className="max-w-[15rem] p-2 bg-gray-500 rounded-xl overflow-hidden">
+				<div className="max-w-[15rem] rounded-lg overflow-hidden">
 					<img
-						className="rounded-xl object-cover w-full h-full"
+						className="rounded-lg object-cover w-full h-full"
 						src="./image.JPG"
 						alt=""
 					/>
@@ -15,16 +17,28 @@ export default function PersonComponent({ name, text, achievements }) {
 					<h2 className="text-white text-3xl">{name}</h2>
 					<p className="text-gray-400 text-lg text-justify">{text}</p>
 					<h3 className="text-xl text-white my-5">Osiągnięcia:</h3>
-					<div className="achievements text-gray-400 text-lg">
-						{achievements.map((item) => (
-							<div className="flex gap-3 items-start mb-2">
-								<SVG className="size-7 text-white" />
-								<div className="w-full">
-									{item}
-								</div>
+					<div className="text-gray-400 text-lg">
+						{achievements.map((item, index) => (
+							<div key={index} className="flex gap-3 items-start mb-2">
+								<SVG className="size-7 text-primary" />
+								<div className="w-full">{item}</div>
 							</div>
 						))}
 					</div>
+					{links && (
+						<div className="flex flex-col gap-2">
+							<h2 className="text-white mt-5">Linki:</h2>
+							{links.map((link) => (
+								<a
+									className="text-primary underline decoration-secondary hover:decoration-primary transition-all delay-150 duration-300"
+									href={link.url}
+									target="_blank"
+								>
+									{link.text}
+								</a>
+							))}
+						</div>
+					)}
 				</div>
 			</div>
 		</div>

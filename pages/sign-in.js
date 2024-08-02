@@ -22,25 +22,29 @@ export default function SignInPage() {
 	}, [course]);
 
 	async function sendEmail() {
-		const response = await fetch("/api/send", {
-			method: "POST",
-			headers: {
-				"Content-Type": "application/json",
-			},
-			body: JSON.stringify({
-				name,
-				email,
-				course: courseName,
-			}),
-		});
+		if (name !== "" && email !== "" && message !== "") {
+			const response = await fetch("/api/send", {
+				method: "POST",
+				headers: {
+					"Content-Type": "application/json",
+				},
+				body: JSON.stringify({
+					name,
+					email,
+					course: courseName,
+				}),
+			});
 
-		const data = await response.json();
-		if (response.ok) {
-			console.log("Email sent successfully:", data);
-			toast.success("Zostałeś zapisany!");
-		} else {
-			console.error("Error sending email:", data.error);
-		}
+			const data = await response.json();
+			if (response.ok) {
+				console.log("Email sent successfully:", data);
+				toast.success("Zostałeś zapisany!");
+			} else {
+				console.error("Error sending email:", data.error);
+			}
+        } else {
+            toast.error("Uzupełnij wszystkie pola.")
+        }
 	}
 	return (
 		<div className="flex flex-col h-screen">
