@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { fadeIn } from "@/utils/motion";
 import { useState } from "react";
 import toast from "react-hot-toast";
+import Footer from "@/components/Footer";
 
 export default function ContactPage() {
 	const [name, setName] = useState("");
@@ -59,8 +60,7 @@ export default function ContactPage() {
 					/>
 					<label>Wiadomość</label>
 					<textarea
-						cols="30"
-						rows="10"
+						className="max-h-[12rem]"
 						placeholder="Chcesz o coś zapytać?"
 						onChange={(e) => setMessage(e.target.value)}
 					></textarea>
@@ -71,7 +71,10 @@ export default function ContactPage() {
 						Send
 					</button>
 				</motion.div>
-			</div>
+            </div>
+            <div>
+                <Footer />
+            </div>
 		</div>
 	);
 }

@@ -4,6 +4,7 @@ import { fadeIn } from "@/utils/motion";
 import { useEffect, useState } from "react";
 import toast from "react-hot-toast";
 import { useRouter } from "next/router";
+import Footer from "@/components/Footer";
 
 export default function SignInPage() {
 	const router = useRouter();
@@ -91,6 +92,9 @@ export default function SignInPage() {
 						Send
 					</button>
 				</motion.div>
+			</div>
+			<div>
+				<Footer />
 			</div>
 		</div>
 	);

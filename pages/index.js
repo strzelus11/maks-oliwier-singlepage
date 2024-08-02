@@ -1,3 +1,4 @@
+import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import Offer from "@/components/Offer";
@@ -20,6 +21,9 @@ export default function Home() {
 				</div>
 				<div className="min-h-screen snap-center">
 					<Offer />
+				</div>
+				<div className="snap-center mb-[70px] lg:mb-[80px]">
+					<Footer />
 				</div>
 			</div>
 		</div>
