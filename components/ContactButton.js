@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function ContactButton({ className }) {
 	return (
 		<Link href="/contact">
-			<button className={`btn-outline ${className}`}>
+			<button className={`btn-outline sign-in ${className}`}>
 				<svg
 					xmlns="http://www.w3.org/2000/svg"
 					viewBox="0 0 24 24"

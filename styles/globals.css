@@ -19,6 +19,12 @@ html {
 	}
 }
 
+@media (max-width: 380px) {
+    .sign-in {
+        @apply text-sm
+    }
+}
+
 .body {
 	background-position: fixed;
 }

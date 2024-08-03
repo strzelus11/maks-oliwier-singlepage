@@ -4,6 +4,7 @@ import { fadeIn } from "@/utils/motion";
 import { useState } from "react";
 import toast from "react-hot-toast";
 import Footer from "@/components/Footer";
+import SendButton from "@/components/SendButton";
 
 export default function ContactPage() {
 	const [name, setName] = useState("");
@@ -64,17 +65,12 @@ export default function ContactPage() {
 						placeholder="Chcesz o coś zapytać?"
 						onChange={(e) => setMessage(e.target.value)}
 					></textarea>
-					<button
-						onClick={() => sendEmail()}
-						className="btn-outline hover:scale-100 hover:bg-black w-full flex justify-center"
-					>
-						Send
-					</button>
+					<SendButton onClick={sendEmail} />
 				</motion.div>
-            </div>
-            <div>
-                <Footer />
-            </div>
+			</div>
+			<div>
+				<Footer />
+			</div>
 		</div>
 	);
 }

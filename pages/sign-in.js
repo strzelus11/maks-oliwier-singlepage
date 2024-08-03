@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 import toast from "react-hot-toast";
 import { useRouter } from "next/router";
 import Footer from "@/components/Footer";
+import SendButton from "@/components/SendButton";
 
 export default function SignInPage() {
 	const router = useRouter();
@@ -43,9 +44,9 @@ export default function SignInPage() {
 			} else {
 				console.error("Error sending email:", data.error);
 			}
-        } else {
-            toast.error("Uzupełnij wszystkie pola.")
-        }
+		} else {
+			toast.error("Uzupełnij wszystkie pola.");
+		}
 	}
 	return (
 		<div className="flex flex-col h-screen">
@@ -85,12 +86,7 @@ export default function SignInPage() {
 						placeholder="Twoje imię i nazwisko"
 						onChange={(e) => setName(e.target.value)}
 					/>
-					<button
-						onClick={() => sendEmail()}
-						className="btn-outline hover:scale-100 hover:opacity-90 w-full flex justify-center mt-3"
-					>
-						Send
-					</button>
+					<SendButton onClick={sendEmail} />
 				</motion.div>
 			</div>
 			<div>

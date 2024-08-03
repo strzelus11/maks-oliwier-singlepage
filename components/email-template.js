@@ -1,5 +1,3 @@
-import { Button, Html } from "@react-email/components";
-
 export default function EmailTemplate({ name, email, message }) {
 	return (
 		<div>

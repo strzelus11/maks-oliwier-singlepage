@@ -13,7 +13,7 @@ export default function Footer() {
 						href="/policy"
 						className="text-sm text-gray-400 underline transition delay-150 duration-300 decoration-secondary/80 hover:decoration-gray-400"
 					>
-						Privacy policy
+						Polityka prywatności
 					</Link>
 				</div>
 			</div>
