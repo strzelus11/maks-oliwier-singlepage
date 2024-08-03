@@ -22,7 +22,7 @@ export default function Home() {
 				<div className="min-h-screen snap-center">
 					<Offer />
 				</div>
-				<div className="snap-center mb-[70px] lg:mb-[80px]">
+				<div className="snap-center lg:mb-[80px]">
 					<Footer />
 				</div>
 			</div>
