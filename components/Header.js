@@ -8,7 +8,7 @@ const links = ["Korepetycje", "Koło olimpijskie", "Oferta"];
 
 const Header = () => {
 	const inactiveLink =
-		"hover:text-primary cursor-pointer hover:scale-105 hover:decoration-primary decoration-secondary underline underline-offset-4 transition-all delay-150 duration-300";
+		"hover:text-primary hover:scale-105 hover:decoration-primary decoration-secondary underline underline-offset-4 transition-all delay-150 duration-300";
 	const activeLink = inactiveLink.replace(
 		"decoration-secondary",
 		"decoration-white"
@@ -20,7 +20,7 @@ const Header = () => {
 		<>
 			<header className="fixed top-0 w-full hidden lg:flex justify-around h-[80px] items-center bg-secondary text-white z-[10]">
 				<Link href={"/#Hero"}>
-					<img className="h-[80px]" src="./file.png" alt="" />
+					<img className="h-[80px] cursor-pointer" src="./file.png" alt="" />
 				</Link>
 				<nav className="flex gap-10">
 					{links.map((link) => (
@@ -58,7 +58,7 @@ const Header = () => {
 					</svg>
 				</div>
 				<Link href={"/#Hero"}>
-					<img className="h-[70px]" src="./file.png" alt="" />
+					<img className="h-[70px] cursor-pointer" src="./file.png" alt="" />
 				</Link>
 				<ContactButton className="hidden sm:flex" />
 				<AnimatePresence>

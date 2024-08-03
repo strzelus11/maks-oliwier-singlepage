@@ -6,7 +6,7 @@ export default function PersonComponent({ name, text, achievements, links }) {
 	return (
 		<div className="bg-secondary p-5 rounded-xl">
 			<div className="flex items-center flex-col sm:flex-row gap-10 sm:items-start">
-				<div className="max-w-[15rem] rounded-lg overflow-hidden">
+				<div className="rounded-lg overflow-hidden w-[15rem] flex-shrink-0">
 					<img
 						className="rounded-lg object-cover w-full h-full"
 						src="./image.JPG"
