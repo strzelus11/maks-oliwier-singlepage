@@ -15,7 +15,8 @@ export default function SignInPage() {
 
 	const [name, setName] = useState("");
 	const [email, setEmail] = useState("");
-	const [courseName, setCourseName] = useState("");
+    const [courseName, setCourseName] = useState("");
+    const [message, setMessage] = useState("");
 
 	useEffect(() => {
 		if (course) {
@@ -33,6 +34,7 @@ export default function SignInPage() {
 				body: JSON.stringify({
 					name,
 					email,
+					message,
 					course: courseName,
 				}),
 			});
@@ -50,7 +52,6 @@ export default function SignInPage() {
 	}
 	return (
 		<div className="flex flex-col h-screen">
-			<Header />
 			<div className="mt-[70px] lg:mt-[80px] flex flex-col justify-center items-center h-full p-5">
 				<motion.div
 					variants={fadeIn("up", "spring", 0.1, 1)}
@@ -86,6 +87,12 @@ export default function SignInPage() {
 						placeholder="Twoje imię i nazwisko"
 						onChange={(e) => setName(e.target.value)}
 					/>
+					<label>Wiadomość</label>
+					<textarea
+						className="max-h-[12rem]"
+						placeholder="Chcesz o coś zapytać?"
+						onChange={(e) => setMessage(e.target.value)}
+					></textarea>
 					<SendButton onClick={sendEmail} />
 				</motion.div>
 			</div>

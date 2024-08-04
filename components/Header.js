@@ -4,7 +4,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { slideIn } from "@/utils/motion";
 import ContactButton from "./ContactButton";
 
-const links = ["Korepetycje", "Koło olimpijskie", "Oferta"];
+const links = ["Korepetycje", "Zajęcia olimpijskie", "Oferta"];
 
 const Header = () => {
 	const inactiveLink =
@@ -68,7 +68,7 @@ const Header = () => {
 							initial="hidden"
 							whileInView="show"
 							exit="exit"
-							className="fixed z-10 top-0 left-0 h-screen bg-secondary w-[60%] pl-[40px]"
+							className="fixed z-10 top-0 left-0 h-screen bg-secondary w-[60%] pl-[20px]"
 						>
 							<div
 								onClick={() => setNavOpen(false)}

@@ -7,25 +7,24 @@ import Tutoring from "@/components/Tutoring";
 
 export default function Home() {
 	return (
-		<div className="flex flex-col overflow-y-scroll full snap-y snap-mandatory scroll-smooth">
-			<Header />
+		<div className="flex flex-col overflow-y-scroll full mt-[70px] lg:mt-[80px] snap-y snap-mandatory scroll-smooth">
 			<div>
-				<div className="min-h-screen snap-start lg:snap-center">
-					<Hero />
-				</div>
-				<div className="min-h-screen snap-start lg:snap-center">
-					<Tutoring />
-				</div>
-				<div className="min-h-screen snap-start lg:snap-center">
-					<Olimpic />
-				</div>
-				<div className="min-h-screen snap-start lg:snap-center">
-					<Offer />
-				</div>
-				<div className="snap-start lg:snap-center">
-					<Footer />
-				</div>
-			</div>
+                <div className="min-h-screen snap-start lg:snap-center">
+                    <Hero />
+                </div>
+                <div className="min-h-screen snap-start lg:snap-center">
+                    <Tutoring />
+                </div>
+                <div className="min-h-screen snap-start lg:snap-center">
+                    <Olimpic />
+                </div>
+                <div className="min-h-screen snap-start lg:snap-center">
+                    <Offer />
+                </div>
+                <div className="snap-start lg:snap-center">
+                    <Footer />
+                </div>
+            </div>
 		</div>
 	);
 }

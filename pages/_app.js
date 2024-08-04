@@ -26,9 +26,8 @@ export default function App({ Component, pageProps }) {
 					},
 				}}
 			/>
-			<div className="full mt-[70px] lg:mt-[80px]">
-                <Component {...pageProps} />
-            </div>
+			<Header />
+			<Component {...pageProps} />
 		</main>
 	);
 }

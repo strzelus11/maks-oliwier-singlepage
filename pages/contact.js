@@ -38,7 +38,6 @@ export default function ContactPage() {
 	}
 	return (
 		<div className="flex flex-col h-screen">
-			<Header />
 			<div className="mt-[70px] lg:mt-[80px] flex flex-col justify-center items-center h-full p-5">
 				<motion.div
 					variants={fadeIn("up", "spring", 0.1, 1)}
