@@ -80,6 +80,10 @@ img {
 	.screen {
 		min-height: calc(100vh - 70px);
 	}
+
+    .full {
+	height: calc(100vh - 70px);
+}
 }
 
 body::before {

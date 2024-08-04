@@ -1,3 +1,5 @@
+import Footer from "@/components/Footer";
+import Header from "@/components/Header";
 import "@/styles/globals.css";
 import { Exo_2 } from "@next/font/google";
 import { Toaster } from "react-hot-toast";
@@ -24,7 +26,9 @@ export default function App({ Component, pageProps }) {
 					},
 				}}
 			/>
-            <Component {...pageProps} />
+			<div className="full mt-[70px] lg:mt-[80px]">
+                <Component {...pageProps} />
+            </div>
 		</main>
 	);
 }

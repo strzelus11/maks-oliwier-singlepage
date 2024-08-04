@@ -6,7 +6,7 @@ import ToggleButton from "./ToggleButton";
 import SVG from "./SVG";
 
 export default function Tutoring() {
-	const [advanced, setAdvanced] = useState(false);
+	const [advanced, setAdvanced] = useState(true);
 	return (
 		<SectionLayout id="Korepetycje" title="O korepetycjach">
 			<div className="text-lg bg-secondary sm:px-10 p-5 rounded-xl leading-6 relative flex justify-center min-h-[30rem] mt-5 sm:mt-0">
