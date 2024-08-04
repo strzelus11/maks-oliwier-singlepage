@@ -9,8 +9,8 @@ html {
 }
 
 :root {
-    --primary: #d0a933;
-    --secondary: #222222
+	--primary: #d0a933;
+	--secondary: #222222;
 }
 
 @media (max-width: 1024px) {
@@ -20,9 +20,9 @@ html {
 }
 
 @media (max-width: 380px) {
-    .sign-in {
-        @apply text-sm
-    }
+	.sign-in {
+		@apply text-sm;
+	}
 }
 
 .body {
@@ -81,9 +81,9 @@ img {
 		min-height: calc(100vh - 70px);
 	}
 
-    .full {
-	height: calc(100vh - 70px);
-}
+	.full {
+		height: calc(100vh - 70px);
+	}
 }
 
 body::before {

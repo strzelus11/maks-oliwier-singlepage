@@ -17,7 +17,7 @@ export default function SectionLayout({
 				variants={fadeIn("down", "spring", 0, 1)}
 				initial="hidden"
 				whileInView="show"
-				className="text-white"
+				className="text-white text-center"
 			>
 				{title}
 			</motion.h1>

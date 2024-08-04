@@ -1,16 +1,22 @@
 import AboutComponent from "@/components/AboutComponent";
 import Footer from "@/components/Footer";
-import Header from "@/components/Header";
+import Head from "next/head";
 
 export default function AboutPage() {
 	return (
-		<div className="flex flex-col overflow-y-scroll h-screen">
-			<div className="mt-[70px] lg:mt-[80px]">
-				<AboutComponent />
+		<>
+			<Head>
+				<title>Physics | O nas</title>
+				<link rel="shortcut icon" href="./file.png" type="image/x-icon" />
+			</Head>
+			<div className="flex flex-col overflow-y-scroll h-screen">
+				<div className="mt-[70px] lg:mt-[80px]">
+					<AboutComponent />
+				</div>
+				<div>
+					<Footer />
+				</div>
 			</div>
-			<div>
-                <Footer />
-            </div>
-		</div>
+		</>
 	);
 }

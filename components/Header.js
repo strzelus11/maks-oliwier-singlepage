@@ -6,7 +6,7 @@ import ContactButton from "./ContactButton";
 import { useRouter } from "next/router";
 import { usePathname } from "next/navigation";
 
-const links = ["Korepetycje", "Zajęcia olimpijskie", "Oferta"];
+const links = ["Korepetycje", "Koło olimpijskie", "Oferta"];
 
 const Header = () => {
 	const inactiveLink =
@@ -15,11 +15,11 @@ const Header = () => {
 		"decoration-secondary",
 		"decoration-white"
 	);
-
+    
+    const [navOpen, setNavOpen] = useState(false);
+    
     const router = useRouter();
     const pathname = usePathname();
-
-	const [navOpen, setNavOpen] = useState(false);
 
 	const handleClick = (e) => {
 		e.preventDefault();
@@ -27,28 +27,33 @@ const Header = () => {
 
 		if (pathname !== "/") {
 			router.push("/").then(() => {
-				router.events.on("routeChangeComplete", () => {
+				const handleRouteChange = () => {
 					document
 						.querySelector(targetId)
 						?.scrollIntoView({ behavior: "smooth" });
-				});
+					router.events.off("routeChangeComplete", handleRouteChange);
+				};
+				router.events.on("routeChangeComplete", handleRouteChange);
 			});
 		} else {
 			document.querySelector(targetId)?.scrollIntoView({ behavior: "smooth" });
-		}
+        }
+        
+        setNavOpen(false);
 	};
 
 	useEffect(() => {
-		document.querySelectorAll("div[data-scroll-to]").forEach((div) => {
+		const divs = document.querySelectorAll("div[data-scroll-to]");
+		divs.forEach((div) => {
 			div.addEventListener("click", handleClick);
 		});
 
 		return () => {
-			document.querySelectorAll("div[data-scroll-to]").forEach((div) => {
+			divs.forEach((div) => {
 				div.removeEventListener("click", handleClick);
 			});
 		};
-	}, []);
+	}, [pathname]);
 
 	return (
 		<>
@@ -125,8 +130,8 @@ const Header = () => {
 								<nav className="flex flex-col gap-10 justify-center mb-10 text-xl">
 									{links.map((link) => (
 										<div
-											onClick={() => setNavOpen(false)}
 											data-scroll-to={`#${link.replace(/\s+/g, "")}`}
+											onClick={handleClick}
 											key={link}
 											className={inactiveLink}
 										>
