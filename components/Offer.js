@@ -8,7 +8,7 @@ export default function Offer() {
 				title="Oferta"
 				subtitle="Wszystkie zajęcia online"
 			>
-				<div className="flex flex-col lg:grid grid-cols-3 gap-10">
+				<div className="flex flex-col lg:grid grid-cols-4 gap-10">
 					<OfferCard
 						title="Korepetycje z fizyki"
 						subtitle="(poziom liceum i studiów)"
@@ -31,6 +31,13 @@ export default function Offer() {
 						time="zajęcia"
 						group={true}
 						index={2}
+					/>
+					<OfferCard
+						title="Korepetycje z programowania"
+						price={100}
+						time="h"
+						group={false}
+						index={3}
 					/>
 				</div>
 			</SectionLayout>

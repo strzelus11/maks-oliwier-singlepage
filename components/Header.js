@@ -1,36 +1,70 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
 import { slideIn } from "@/utils/motion";
 import ContactButton from "./ContactButton";
+import { useRouter } from "next/router";
+import { usePathname } from "next/navigation";
 
 const links = ["Korepetycje", "Zajęcia olimpijskie", "Oferta"];
 
 const Header = () => {
 	const inactiveLink =
-		"hover:text-primary hover:scale-105 hover:decoration-primary decoration-secondary underline underline-offset-4 transition-all delay-150 duration-300";
+		"hover:text-primary cursor-pointer hover:scale-105 hover:decoration-primary decoration-secondary underline underline-offset-4 transition-all delay-150 duration-300";
 	const activeLink = inactiveLink.replace(
 		"decoration-secondary",
 		"decoration-white"
 	);
 
+    const router = useRouter();
+    const pathname = usePathname();
+
 	const [navOpen, setNavOpen] = useState(false);
+
+	const handleClick = (e) => {
+		e.preventDefault();
+		const targetId = e.currentTarget.getAttribute("data-scroll-to");
+
+		if (pathname !== "/") {
+			router.push("/").then(() => {
+				router.events.on("routeChangeComplete", () => {
+					document
+						.querySelector(targetId)
+						?.scrollIntoView({ behavior: "smooth" });
+				});
+			});
+		} else {
+			document.querySelector(targetId)?.scrollIntoView({ behavior: "smooth" });
+		}
+	};
+
+	useEffect(() => {
+		document.querySelectorAll("div[data-scroll-to]").forEach((div) => {
+			div.addEventListener("click", handleClick);
+		});
+
+		return () => {
+			document.querySelectorAll("div[data-scroll-to]").forEach((div) => {
+				div.removeEventListener("click", handleClick);
+			});
+		};
+	}, []);
 
 	return (
 		<>
 			<header className="fixed top-0 w-full hidden lg:flex justify-around h-[80px] items-center bg-secondary text-white z-[10]">
-				<Link href={"/#Hero"}>
+				<div data-scroll-to="#Hero">
 					<img className="h-[80px] cursor-pointer" src="./file.png" alt="" />
-				</Link>
+				</div>
 				<nav className="flex gap-10">
 					{links.map((link) => (
-						<Link
-							href={`/#${link.replace(/\s+/g, "")}`}
+						<div
+							data-scroll-to={`#${link.replace(/\s+/g, "")}`}
 							key={link}
 							className={inactiveLink}
 						>
 							{link}
-						</Link>
+						</div>
 					))}
 					<Link className={inactiveLink} href={"/about"}>
 						O nas
@@ -57,9 +91,9 @@ const Header = () => {
 						/>
 					</svg>
 				</div>
-				<Link href={"/#Hero"}>
+				<div data-scroll-to="#Hero">
 					<img className="h-[70px] cursor-pointer" src="./file.png" alt="" />
-				</Link>
+				</div>
 				<ContactButton className="hidden sm:flex" />
 				<AnimatePresence>
 					{navOpen && (
@@ -90,14 +124,14 @@ const Header = () => {
 							<div className="flex flex-col justify-between items-start mt-[100px]">
 								<nav className="flex flex-col gap-10 justify-center mb-10 text-xl">
 									{links.map((link) => (
-										<Link
+										<div
 											onClick={() => setNavOpen(false)}
-											href={`/#${link.replace(/\s+/g, "")}`}
+											data-scroll-to={`#${link.replace(/\s+/g, "")}`}
 											key={link}
 											className={inactiveLink}
 										>
 											{link}
-										</Link>
+										</div>
 									))}
 									<Link
 										onClick={() => setNavOpen(false)}

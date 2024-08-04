@@ -26,7 +26,6 @@ export default function SectionLayout({
 				variants={fadeIn("up", "spring", 0.1, 1)}
 				initial="hidden"
 				whileInView="show"
-				className="mt-5"
 			>
 				{children}
 			</motion.div>
