@@ -28,8 +28,8 @@ export default function PersonComponent({ name, text, achievements, links }) {
 					{links && (
 						<div className="flex flex-col gap-2">
 							<h2 className="text-white mt-5">Linki:</h2>
-							{links.map((link) => (
-								<a
+							{links.map((link, index) => (
+								<a key={index}
 									className="text-primary underline decoration-secondary hover:decoration-primary transition-all delay-150 duration-300"
 									href={link.url}
 									target="_blank"

@@ -28,7 +28,7 @@ export default function Tutoring() {
 						>
 							<div className="text-gray-300 text-justify">
 								Przy nauczaniu fizyki i matematyki zwracamy szczególną uwagę na
-								“insight”, czyli dogłębne rozumienie. Sprawia ono, że
+								&quot;insight&quot;, czyli dogłębne rozumienie. Sprawia ono, że
 								zapamiętanie wzorów czy zasad nie stanowi żadnego problemu.
 								Przykładem może być wzór na rozkład Plancka:
 							</div>
@@ -50,13 +50,13 @@ export default function Tutoring() {
 								<span className="text-white font-semibold italic">
 									Niels Bohr:
 								</span>{" "}
-								"Algebra's like sheet music, the important thing isn't can you
-								read music, it's can you hear it. Can you hear the music,
-								Robert?" <br />
+								&quot;Algebra&apos;s like sheet music, the important thing
+								isn&apos;t can you read music, it&apos;s can you hear it. Can
+								you hear the music, Robert?&quot; <br />
 								<span className="text-white font-semibold italic">
 									J. Robert Oppenheimer:
 								</span>{" "}
-								"Yes, I can."
+								&quot;Yes, I can.&quot;
 							</div>
 						</motion.div>
 					) : (
@@ -79,35 +79,36 @@ export default function Tutoring() {
 							<div className="text-gray-300 text-justify flex gap-3 items-start">
 								<SVG className="size-7 text-primary" />
 								<div className="w-full">
-                                    Równania, przekształcenia i wzory zapisujemy na żywo w systemie
-                                    opartym na technologii LaTeX, dzięki czemu są one czytelne i
-                                    eleganckie. Umożliwia to błyskawiczne eksportowanie notatki z
-                                    zajęć do pliku pdf, który otrzymasz.
-                                </div>
+									Równania, przekształcenia i wzory zapisujemy na żywo w
+									systemie opartym na technologii LaTeX, dzięki czemu są one
+									czytelne i eleganckie. Umożliwia to błyskawiczne eksportowanie
+									notatki z zajęć do pliku pdf, który otrzymasz.
+								</div>
 							</div>
 							<div className="text-gray-300 text-justify flex gap-3 items-start">
 								<SVG className="size-7 text-primary" />
 								<div className="w-full">
-                                    Zrozumienie wielu zjawisk fizycznych jest łatwiejsze, gdy się je
-                                    zobaczy. Podczas korepetycji używamy profesjonalnych symulacji
-                                    fizycznych (naszego autorstwa lub klasyków z Internetu).
-                                    Programy te są często interaktywne i wyrabiają naturalną
-                                    intuicję fizyczną.
-                                </div>
+									Zrozumienie wielu zjawisk fizycznych jest łatwiejsze, gdy się
+									je zobaczy. Podczas korepetycji używamy profesjonalnych
+									symulacji fizycznych (naszego autorstwa lub klasyków z
+									Internetu). Programy te są często interaktywne i wyrabiają
+									naturalną intuicję fizyczną.
+								</div>
 							</div>
 							<div className="text-gray-300 text-justify flex gap-3 items-start">
 								<SVG className="size-7 text-primary" />
 								<div className="w-full">
-                                    Nasze zajęcia przygotują Cię do wydajnego radzenia sobie z
-                                    kartkówkami, sprawdzianami czy maturą. Zwracamy jednak też uwagę
-                                    na fakt, że znajomość fizyki przydaje się w życiu. Wiedza, że
-                                    droga hamowania skaluje się z kwadratem prędkości (pytają o to
-                                    nawet na egzaminie na prawo jazdy), czy że w przechylonym i
-                                    skręcającym samolocie nie czuć przechyłu, kształtuje rozumienie
-                                    świata wokół nas. Dzięki niej możemy czasem wyjaśnić coś
-                                    młodszym kolegom, albo innym razem możemy uniknąć wypadku. Nie
-                                    wspominamy o inżynierach, którzy z fizyki korzystają zawodowo.
-                                </div>
+									Nasze zajęcia przygotują Cię do wydajnego radzenia sobie z
+									kartkówkami, sprawdzianami czy maturą. Zwracamy jednak też
+									uwagę na fakt, że znajomość fizyki przydaje się w życiu.
+									Wiedza, że droga hamowania skaluje się z kwadratem prędkości
+									(pytają o to nawet na egzaminie na prawo jazdy), czy że w
+									przechylonym i skręcającym samolocie nie czuć przechyłu,
+									kształtuje rozumienie świata wokół nas. Dzięki niej możemy
+									czasem wyjaśnić coś młodszym kolegom, albo innym razem możemy
+									uniknąć wypadku. Nie wspominamy o inżynierach, którzy z fizyki
+									korzystają zawodowo.
+								</div>
 							</div>
 						</motion.div>
 					)}
