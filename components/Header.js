@@ -127,7 +127,7 @@ const Header = () => {
 								</svg>
 							</div>
 							<div className="flex flex-col justify-between items-start mt-[100px]">
-								<nav className="flex flex-col gap-10 justify-center mb-10 text-xl">
+								<nav className="flex flex-col gap-10 justify-center mb-10 text-lg">
 									{links.map((link) => (
 										<div
 											data-scroll-to={`#${link.replace(/\s+/g, "")}`}

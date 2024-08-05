@@ -1,4 +1,4 @@
-import Footer from "@/components/Footer";
+import "katex/dist/katex.min.css";
 import Header from "@/components/Header";
 import "@/styles/globals.css";
 import { Exo_2 } from "@next/font/google";
