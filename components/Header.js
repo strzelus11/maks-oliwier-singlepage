@@ -6,7 +6,7 @@ import ContactButton from "./ContactButton";
 import { useRouter } from "next/router";
 import { usePathname } from "next/navigation";
 
-const links = ["Korepetycje", "Koło olimpijskie", "Oferta"];
+const links = ["Korepetycje", "Koło olimpijskie", "Programowanie", "Oferta"];
 
 const Header = () => {
 	const inactiveLink =

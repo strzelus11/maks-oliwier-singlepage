@@ -1,5 +1,5 @@
+import Coding from "@/components/Coding";
 import Footer from "@/components/Footer";
-import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import Offer from "@/components/Offer";
 import Olimpic from "@/components/Olimpic";
@@ -23,6 +23,9 @@ export default function Home() {
 					</div>
 					<div className="min-h-screen snap-start lg:snap-center">
 						<Olimpic />
+					</div>
+					<div className="min-h-screen snap-start lg:snap-center">
+						<Coding />
 					</div>
 					<div className="min-h-screen snap-start lg:snap-center">
 						<Offer />

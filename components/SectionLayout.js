@@ -26,7 +26,7 @@ export default function SectionLayout({
 				variants={fadeIn("up", "spring", 0.1, 1)}
 				initial="hidden"
                 whileInView="show"
-                className="flex justify-center"
+                className="flex justify-center w-full"
 			>
 				{children}
 			</motion.div>
