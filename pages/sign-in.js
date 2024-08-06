@@ -1,4 +1,3 @@
-import Header from "@/components/Header";
 import { motion } from "framer-motion";
 import { fadeIn } from "@/utils/motion";
 import { useEffect, useState } from "react";
@@ -11,8 +10,6 @@ import Head from "next/head";
 export default function SignInPage() {
 	const router = useRouter();
 	const { course } = router.query;
-
-	console.log(course);
 
 	const [name, setName] = useState("");
 	const [email, setEmail] = useState("");
@@ -80,6 +77,9 @@ export default function SignInPage() {
 							</option>
 							<option value="Koło olimpijskie z fizyki">
 								Koło olimpijskie z fizyki
+							</option>
+							<option value="Korepetycje z programowania">
+								Korepetycje z programowania
 							</option>
 						</select>
 						<label>Email</label>

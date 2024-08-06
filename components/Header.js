@@ -15,11 +15,11 @@ const Header = () => {
 		"decoration-secondary",
 		"decoration-white"
 	);
-    
-    const [navOpen, setNavOpen] = useState(false);
-    
-    const router = useRouter();
-    const pathname = usePathname();
+
+	const [navOpen, setNavOpen] = useState(false);
+
+	const router = useRouter();
+	const pathname = usePathname();
 
 	const handleClick = (e) => {
 		e.preventDefault();
@@ -27,23 +27,20 @@ const Header = () => {
 
 		if (pathname !== "/") {
 			router.push("/").then(() => {
-				const handleRouteChange = () => {
-					document
-						.querySelector(targetId)
-						?.scrollIntoView({ behavior: "smooth" });
-					router.events.off("routeChangeComplete", handleRouteChange);
-				};
-				router.events.on("routeChangeComplete", handleRouteChange);
+				document
+					.querySelector(targetId)
+					?.scrollIntoView({ behavior: "smooth" });
 			});
 		} else {
 			document.querySelector(targetId)?.scrollIntoView({ behavior: "smooth" });
-        }
-        
-        setNavOpen(false);
+		}
+
+		setNavOpen(false);
 	};
 
 	useEffect(() => {
 		const divs = document.querySelectorAll("div[data-scroll-to]");
+
 		divs.forEach((div) => {
 			div.addEventListener("click", handleClick);
 		});
@@ -145,7 +142,9 @@ const Header = () => {
 									>
 										O nas
 									</Link>
-									<ContactButton />
+									<div onClick={() => setNavOpen(false)}>
+										<ContactButton />
+									</div>
 								</nav>
 							</div>
 						</motion.nav>

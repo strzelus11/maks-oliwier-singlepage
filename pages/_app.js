@@ -3,6 +3,7 @@ import Header from "@/components/Header";
 import "@/styles/globals.css";
 import { Exo_2 } from "@next/font/google";
 import { Toaster } from "react-hot-toast";
+import Head from "next/head";
 
 const font = Exo_2({ subsets: ["latin"] });
 
@@ -26,6 +27,9 @@ export default function App({ Component, pageProps }) {
 					},
 				}}
 			/>
+			<Head>
+				<meta name="viewport" content="width=device-width, initial-scale=1" />
+			</Head>
 			<Header />
 			<Component {...pageProps} />
 		</main>

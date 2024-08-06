@@ -5,7 +5,7 @@ import { FaQuoteRight } from "react-icons/fa";
 
 export default function Hero() {
 	return (
-		<div id="Hero" className="p-5 bg-black text-white flex justify-center screen">
+		<div id="Hero" className="px-5 bg-black text-white flex justify-center screen">
 			<div className="grid lg:grid-cols-2 xl:grid-cols-3 gap-[40px] items-center xl:items-start">
 				<motion.div
 					variants={fadeIn("right", "spring", 0.3, 1)}
@@ -17,7 +17,7 @@ export default function Hero() {
 						<div className="mb-5">
 							<FaQuoteLeft className="size-10" />
 						</div>
-						<p className="text-4xl xl:text-[3vw] xl:leading-[2.9rem] font-semibold m-5">
+						<p className="text-4xl xl:text-5xl xl:leading-[2.9rem] font-semibold m-5">
 							All of <span className="text-primary">physics</span> is either impossible or trivial. It is impossible
 							until you understand it, and then it becomes trivial.
 						</p>

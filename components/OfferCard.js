@@ -24,13 +24,13 @@ export default function OfferCard({
 			variants={fadeIn("down", "spring", 0.1 * index, 1)}
 			initial="hidden"
 			animate="show"
-			className="box flex flex-col items-center justify-between shadow-2xl transition-all delay-100 duration-300 h-[25rem] border-2 border-primary"
+			className="box flex flex-col items-center justify-between shadow-2xl transition-all delay-100 duration-300 lg:h-[25rem] border-2 border-primary"
 		>
-			<div className="h-20">
+			<div className="lg:h-20">
 				<h2 className="text-center text-2xl font-semibold">{title}</h2>
 				<h3 className="text-gray-500 text-center mt-2">{subtitle}</h3>
 			</div>
-			<div>
+			<div className="my-5 lg:my-0">
 				<span className="text-5xl font-semibold">{price}</span>zł/{time}
 			</div>
 			<div className="flex flex-col items-center w-full">

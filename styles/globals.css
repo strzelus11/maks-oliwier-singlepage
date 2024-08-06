@@ -2,14 +2,26 @@
 @tailwind components;
 @tailwind utilities;
 
-html {
+html,
+body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	box-sizing: border-box;
 	scroll-behavior: smooth;
 	overflow: hidden;
+	scroll-padding-top: 80px;
 }
 
 :root {
 	--primary: #d0a933;
 	--secondary: #222222;
+}
+
+@media (max-width: 1024px) {
+	html {
+		scroll-padding-top: 70px;
+	}
 }
 
 @media (max-width: 380px) {

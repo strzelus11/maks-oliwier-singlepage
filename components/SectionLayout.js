@@ -23,7 +23,7 @@ export default function SectionLayout({
 			</motion.h1>
 			<h2 className="text-xl text-gray-500 mb-5">{subtitle}</h2>
 			<motion.div
-				variants={fadeIn("up", "spring", 0.1, 1)}
+				variants={fadeIn("up", "spring", 0.2, 1)}
 				initial="hidden"
                 whileInView="show"
                 className="flex justify-center w-full"
