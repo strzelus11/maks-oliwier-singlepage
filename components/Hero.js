@@ -5,7 +5,7 @@ import { FaQuoteRight } from "react-icons/fa";
 
 export default function Hero() {
 	return (
-		<div id="Hero" className="px-5 bg-black text-white flex justify-center screen">
+		<div id="Hero" className="p-5 lg:py-0 bg-black text-white flex justify-center full">
 			<div className="grid lg:grid-cols-2 xl:grid-cols-3 gap-[40px] items-center xl:items-start">
 				<motion.div
 					variants={fadeIn("right", "spring", 0.3, 1)}
@@ -41,11 +41,11 @@ export default function Hero() {
 					variants={fadeIn("up", "spring", 0.5, 1)}
 					initial="hidden"
 					whileInView="show"
-					className="xl:col-span-2 h-full hidden lg:flex items-center"
+					className="xl:col-span-2 h-full hidden lg:flex items-center justify-center"
 				>
 					<img
 						className="rounded-xl border-2 border-secondary"
-						src="https://www.researchgate.net/publication/374151532/figure/fig2/AS:11431281190985334@1695559626486/Left-Ernest-Rutherford-1871-1937-Right-Rutherford-in-his-laboratory-at-McGill.ppm"
+						src="./hero.png"
 						alt=""
 					/>
 				</motion.div>

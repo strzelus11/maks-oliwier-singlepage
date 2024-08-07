@@ -74,7 +74,7 @@ img {
 	.bg-image::before {
 		background-size: cover;
 		background-position: center;
-		background-image: url("https://www.researchgate.net/publication/374151532/figure/fig2/AS:11431281190985334@1695559626486/Left-Ernest-Rutherford-1871-1937-Right-Rutherford-in-his-laboratory-at-McGill.ppm");
+		background-image: url("../public/hero.png");
 		content: "";
 		position: absolute;
 		border-radius: 10px;

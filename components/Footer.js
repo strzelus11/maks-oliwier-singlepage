@@ -3,7 +3,7 @@ import { FaFacebookSquare, FaInstagram, FaYoutube } from "react-icons/fa";
 
 export default function Footer() {
 	return (
-		<div className="w-full border-t border-primary h-[110px] lg:h-[80px] bg-secondary/80 text-white flex flex-col lg:flex-row justify-between lg:justify-around items-center pt-2 lg:pt-0">
+		<div className="w-full border-t border-primary h-[110px] lg:h-[80px] bg-secondary/80 text-white flex flex-col lg:flex-row justify-center lg:justify-around items-center gap-2">
 			<div className="flex-col justify-center">
 				<div className="flex justify-center lg:justify-start gap-5">
 					<Link
@@ -16,7 +16,7 @@ export default function Footer() {
 						href="/terms"
 						className="text-sm text-gray-400 underline transition delay-150 duration-300 decoration-secondary/80 hover:decoration-gray-400"
 					>
-						Zasady uzytkowania
+						Zasady użytkowania
 					</Link>
 				</div>
 				<div className="text-center lg:text-left">

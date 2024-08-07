@@ -7,22 +7,37 @@ import { SiTensorflow } from "react-icons/si";
 import { FaDatabase } from "react-icons/fa";
 import { AnimatePresence } from "framer-motion";
 import { motion } from "framer-motion";
+import SVG from "./SVG";
+
+const tabContent = {
+	Python: [
+		"Python jest jednym z najpopularniejszych i najczęściej wykorzystywanych języków programowania. Znajduje swoje zastosowanie m. in. w programowaniu webowym, analizie danych, cyberbezpieczeństwie oraz uczeniu maszynowym.",
+		"Korepetycje tego języka obejmują zarówno zakres podstawowy, jaki i zaawansowany.",
+		"Nauczamy przede wszystkim takich zagadnień jak podstawowe funkcjonalności w Python, różne paradygmaty (np. programowanie obiektowe i funkcyjne), oraz posługiwanie się modułami wbudowanymi w język (sys, os, math itp.).",
+		"Jeżeli chcesz zacząć naukę programowania i nie wiesz jak zacząć, to będziemy dla Ciebie wsparciem.",
+	],
+	"Data Analysis": [
+		"Nie możesz poradzić sobie ze statystyką na studiach?, albo potrzebujesz jej znajomości w pracy?, nie przejmuj się!!!. Analiza danych jest bardzo przydatną i opłacaną umiejętnością. Duże korporacje opierają część swojego sukcesu na odpowiednich analizach. Inwestorzy przeprowadzają analizy techniczne, które pozwalają im podejmować lepsze decyzje. Ilość danych na świecie nieustannie rośnie, a im więcej ich jest tym więcej informacji zawierają. Naucz się  wyciągać te informacje!!!.",
+		"Istnieje wiele narzędzi do analizy danych. My nauczymy Cię programistycznego podejścia używając języka Python i jego popularnych bibliotek Pandas, Numpy i Matplotlib.",
+	],
+	"Scikit-Learn": [
+		"Czy zastanawiałeś się kiedyś jaki sekret stoi za działaniem sztucznej inteligencji?, co to właściwie znaczy, że program jest inteligentny?. Okazuję się, że odpowiedź na te pytania nie jest wcale taka trudna. Jeśli chciałbyś stworzyć swoją pierwszą sztuczną inteligencję lub udoskonalić umiejętności z analizy danych, to jesteśmy gotowi aby towarzyszyć Ci w tej interesującej przygodzie",
+		"Oferujemy naukę technik i narzędzi w zakresie popularnej biblioteki Python Scikit-learn, takich jak regresja liniowa, logistyczna, L1, L2, L1L2 oraz wiele metod klasyfikacji danych. Dodatkowo nauczysz się również przygotowywać i organizować zestawy danych do treningu modeli.",
+	],
+	TensorFlow: [
+		"Jedną z najciekawszych dziedzin uczenia maszynowego jest głębokie uczenie maszynowe. Polega to na tworzeniu modeli opartych, które opierają swoje funkcjonowanie na sieciach neuronowych. Tensorflow jest dużym frameworkiem, umożliwiającym sprawne implementowanie tych modeli.",
+		"Jeżeli marzysz o pracowaniu nad najnowszymi technologiami AI takimi jak generatory zdjęć, chatboty i wiele innych, znając Tensorflow jesteś w stanie osiągnąć wielkie rezultaty w kilkunastu linijkach kodu.",
+	],
+};
 
 export default function Coding() {
 	const [activeTab, setActiveTab] = useState("Python");
-
-	const tabContent = {
-		Python: "Content for Python",
-		"Data Analysis": "Content for Next JS",
-		"Scikit-Learn": "Content for Scikit-Learn",
-		TensorFlow: "Content for TensorFlow",
-	};
 
 	return (
 		<SectionLayout
 			id="Programowanie"
 			title="Programowanie"
-            subtitle="Technologie, których nauczamy"
+			subtitle="Technologie, których nauczamy"
 		>
 			<div className="w-full mt-5 sm:mt-0">
 				<div className="bg-black h-[50px] w-full flex items-center justify-around gap-2 rounded-t-xl">
@@ -53,7 +68,15 @@ export default function Coding() {
 							exit={{ opacity: 0, y: 20 }}
 							transition={{ duration: 0.3 }}
 						>
-							{tabContent[activeTab]}
+							{tabContent[activeTab].map((content, index) => (
+								<div
+									key={index}
+									className="text-gray-300 text-justify flex gap-3 items-start mb-4"
+								>
+									<SVG className="size-7 text-primary" />
+									<div className="w-full">{content}</div>
+								</div>
+							))}
 						</motion.div>
 					</AnimatePresence>
 				</div>
