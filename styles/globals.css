@@ -117,10 +117,6 @@ label {
 	@apply text-gray-500;
 }
 
-.color {
-	color: #dddddd;
-}
-
 ::-webkit-scrollbar {
 	width: 5px;
 }
