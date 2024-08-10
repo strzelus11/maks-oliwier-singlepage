@@ -52,8 +52,8 @@ export default function TermsPage() {
 						stron.
 					</li>
 					<li>
-						Strona jest dostarczana "tak jak jest" bez żadnych gwarancji. Nie
-						gwarantujemy dokładności ani kompletności informacji.
+						Strona jest dostarczana &quot;tak jak jest&quot; bez żadnych
+						gwarancji. Nie gwarantujemy dokładności ani kompletności informacji.
 					</li>
 					<li>
 						Nie ponosimy odpowiedzialności za jakiekolwiek szkody wynikające z
