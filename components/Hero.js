@@ -27,8 +27,8 @@ export default function Hero() {
 							</p>
 							<FaQuoteRight className="size-10" />
 						</div>
-						<p className="m-5 text-xl">
-							Pomożemy Ci zrozumieć fizykę, tak, aby <br />{" "}
+						<p className="m-5 mr-0 text-xl">
+							Pomożemy Ci zrozumieć naukę, tak, aby <br />{" "}
 							<span className="text-primary italic">impossible</span>{" "}
 							<span className="text-gray-500">(niemożliwe)</span> stało się{" "}
 							<br />

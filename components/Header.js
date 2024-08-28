@@ -56,7 +56,11 @@ const Header = () => {
 		<>
 			<header className="fixed top-0 w-full hidden lg:flex justify-around h-[80px] items-center bg-secondary text-white z-[10]">
 				<div data-scroll-to="#Hero">
-					<img className="h-[50px] -mt-4 cursor-pointer" src="./file.png" alt="" />
+					<img
+						className="h-[50px] cursor-pointer -mt-3"
+						src="./website.svg"
+						alt=""
+					/>
 				</div>
 				<nav className="flex gap-10">
 					{links.map((link) => (
@@ -94,7 +98,11 @@ const Header = () => {
 					</svg>
 				</div>
 				<div data-scroll-to="#Hero">
-					<img className="h-[45px] -mt-2 cursor-pointer" src="./file.png" alt="" />
+					<img
+						className="h-[50px] cursor-pointer -mt-3"
+						src="./website.svg"
+						alt=""
+					/>
 				</div>
 				<ContactButton className="hidden sm:flex" />
 				<AnimatePresence>

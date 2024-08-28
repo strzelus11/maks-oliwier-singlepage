@@ -24,13 +24,18 @@ export default function Footer() {
 				</div>
 			</div>
 			<div className="flex pb-3 lg:pb-0 gap-3 text-gray-400 items-center justify-center">
-				<Link href="">
+				<Link
+					href="https://www.facebook.com/people/Insight-Hunters/61564570392955"
+					target="_blank"
+					rel="noopener noreferrer"
+				>
 					<FaFacebookSquare className="size-7 hover:text-primary transition-all delay-150 duration-300 hover:scale-105" />
 				</Link>
-				<Link href="">
-					<FaInstagram className="size-7 hover:text-primary transition-all delay-150 duration-300 hover:scale-105" />
-				</Link>
-				<Link href="">
+				<Link
+					href="https://www.youtube.com/@InsightHunters"
+					target="_blank"
+					rel="noopener noreferrer"
+				>
 					<FaYoutube className="size-7 hover:text-primary transition-all delay-150 duration-300 hover:scale-105" />
 				</Link>
 			</div>

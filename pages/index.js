@@ -13,7 +13,7 @@ export default function Home() {
 				<title>Physics</title>
 				<link rel="shortcut icon" href="./file.png" type="image/x-icon" />
 			</Head>
-			<div className="flex flex-col overflow-y-scroll full mt-[70px] lg:mt-[80px] snap-y snap-mandatory scroll-smooth">
+			<div className="flex flex-col overflow-y-scroll full mt-[70px] lg:mt-[80px] snap-mandatory scroll-smooth">
 				<div>
 					<div className="min-h-screen snap-start lg:snap-center">
 						<Hero />

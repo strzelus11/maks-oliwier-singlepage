@@ -19,7 +19,7 @@ export default async function handle(req, res) {
 	try {
 		const { data, error } = await resend.emails.send({
 			from: `${name} <onboarding@resend.dev>`,
-			to: "jstrzelecki997@gmail.com",
+			to: "insighthunters.company@gmail.com",
 			subject: course || "Korepetycje",
 			react: EmailTemplate({
 				name: name,

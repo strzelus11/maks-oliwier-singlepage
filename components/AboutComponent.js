@@ -46,7 +46,7 @@ export default function AboutComponent() {
 				<PersonComponent
 					name="Maksymilian Strzelecki"
 					image="./maks.png"
-					text="Fizyka i matematyka zawsze były dla mnie bardzo ciekawymi naukami. Wiele czasu spędziłem rozwiązując problemy z zakresu różnych dyscyplin tych dziedzin. Dodatkowo połączyłem tę wiedzę i doświadczenie z moją inną pasją, jaką jest programowanie, poprzez tworzenie symulacji komputerowych, analizując dane oraz tworząc technologie AI wykorzystując sieci neuronowe. W liceum przekazywałem wiedzę innym uczniom organizując wykłady i zajęcia wyrównawcze. Obecnie studiuję Informatykę na Politechnice Poznańskiej, gdzie kontynuuje swoją naukową przygodę."
+					text="Fizyka i matematyka zawsze były dla mnie bardzo ciekawymi naukami. Wiele czasu spędziłem rozwiązując problemy z zakresu różnych dyscyplin tych dziedzin. Dodatkowo połączyłem tę wiedzę i doświadczenie z moją inną pasją, jaką jest programowanie, poprzez tworzenie symulacji komputerowych, analizując dane oraz tworząc technologie AI wykorzystując sieci neuronowe. Obecnie studiuję informatykę na Politechnice Poznańskiej, gdzie kontynuuje swoją naukową przygodę."
 					achievements={maksAchiev}
 				/>
 			</div>

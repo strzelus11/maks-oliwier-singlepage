@@ -27,7 +27,7 @@ export default function Tutoring() {
 							transition={{ duration: 0.3 }}
 						>
 							<div className="text-gray-300 text-justify">
-								Przy nauczaniu fizyki i matematyki zwracamy szczególną uwagę na
+								Przy nauczaniu zwracamy szczególną uwagę na
 								&quot;insight&quot;, czyli dogłębne rozumienie. Sprawia ono, że
 								zapamiętanie wzorów czy zasad nie stanowi żadnego problemu.
 								Przykładem może być wzór na rozkład Plancka:

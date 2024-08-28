@@ -97,7 +97,7 @@ export default function SignInPage() {
 						<label>Wiadomość</label>
 						<textarea
 							className="max-h-[12rem]"
-							placeholder="Chcesz o coś zapytać?"
+							placeholder="Opisz problem, który chciałbyś z nami przedyskutować na zajęciach."
 							onChange={(e) => setMessage(e.target.value)}
 						></textarea>
 						<SendButton onClick={sendEmail} />
