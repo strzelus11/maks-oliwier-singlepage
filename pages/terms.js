@@ -38,14 +38,14 @@ export default function TermsPage() {
 							</ul>
 						</li>
 						<li>
-							Treści na stronie są własnością działalności "Insight Hunters" lub
-							jej użytkowników. Możesz korzystać z treści wyłącznie do celów
-							osobistych, niekomercyjnych.
+							Treści na stronie są własnością działalności &quot;Insight
+							Hunters&quot; lub jej użytkowników. Możesz korzystać z treści
+							wyłącznie do celów osobistych, niekomercyjnych.
 						</li>
 						<li>
 							Wszystkie treści, znaki towarowe i inne prawa własności
-							intelektualnej są własnością działalności "Insight Hunters" lub
-							jej licencjodawców.
+							intelektualnej są własnością działalności &quot;Insight
+							Hunters&quot; lub jej licencjodawców.
 						</li>
 						<li>
 							Prosimy o zapoznanie się z naszą Polityką Prywatności, która jest
