@@ -45,7 +45,7 @@ export default function Hero() {
 				>
 					<img
 						className="rounded-xl border-2 border-secondary"
-						src="./hero.png"
+						src="/hero.png"
 						alt=""
 					/>
 				</motion.div>

@@ -7,7 +7,7 @@ export default function AboutPage() {
 		<>
 			<Head>
 				<title>Insight Hunters | O nas</title>
-				<link rel="shortcut icon" href="./file.png" type="image/x-icon" />
+				<link rel="shortcut icon" href="/file.png" type="image/x-icon" />
 			</Head>
 			<div className="flex flex-col overflow-y-scroll h-screen">
 				<div className="mt-[70px] lg:mt-[80px]">

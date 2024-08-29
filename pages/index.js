@@ -11,7 +11,7 @@ export default function Home() {
 		<>
 			<Head>
 				<title>Insight Hunters</title>
-				<link rel="shortcut icon" href="./file.png" type="image/x-icon" />
+				<link rel="shortcut icon" href="/file.png" type="image/x-icon" />
 			</Head>
 			<div className="flex flex-col overflow-y-scroll full mt-[70px] lg:mt-[80px] snap-mandatory scroll-smooth">
 				<div>

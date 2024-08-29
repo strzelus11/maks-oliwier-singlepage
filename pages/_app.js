@@ -1,7 +1,7 @@
 import "katex/dist/katex.min.css";
 import Header from "@/components/Header";
 import "@/styles/globals.css";
-import { Exo_2 } from "@next/font/google";
+import { Exo_2 } from "next/font/google";
 import { Toaster } from "react-hot-toast";
 import Head from "next/head";
 

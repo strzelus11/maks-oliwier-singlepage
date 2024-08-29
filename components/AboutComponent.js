@@ -38,14 +38,14 @@ export default function AboutComponent() {
 			<div className="flex flex-col gap-10">
 				<PersonComponent
 					name="Oliwier Urbański"
-					image="./oliwier.png"
+					image="/oliwier.png"
 					text="Fizyka jest moją największą pasją. Interesuję się fizyką statystyczną, kwantowymi układami wielu ciał oraz fizyką żeglarstwa. W wolnych chwilach trenuję na klasie Formuła Windsurfing Foil."
 					links={links}
 					achievements={oliwierAchiev}
 				/>
 				<PersonComponent
 					name="Maksymilian Strzelecki"
-					image="./maks.png"
+					image="/maks.png"
 					text="Fizyka i matematyka zawsze były dla mnie bardzo ciekawymi naukami. Wiele czasu spędziłem rozwiązując problemy z zakresu różnych dyscyplin tych dziedzin. Dodatkowo połączyłem tę wiedzę i doświadczenie z moją inną pasją, jaką jest programowanie, poprzez tworzenie symulacji komputerowych, analizując dane oraz tworząc technologie AI wykorzystując sieci neuronowe. Obecnie studiuję informatykę na Politechnice Poznańskiej, gdzie kontynuuje swoją naukową przygodę."
 					achievements={maksAchiev}
 				/>

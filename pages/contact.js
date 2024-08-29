@@ -72,7 +72,7 @@ export default function ContactPage() {
 		<>
 			<Head>
 				<title>Insight Hunters | Kontakt</title>
-				<link rel="shortcut icon" href="./file.png" type="image/x-icon" />
+				<link rel="shortcut icon" href="/file.png" type="image/x-icon" />
 			</Head>
 			<div className="flex flex-col h-screen">
 				<div className="mt-[70px] lg:mt-[80px] flex flex-col justify-center items-center h-full p-5">

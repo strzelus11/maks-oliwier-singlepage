@@ -57,7 +57,6 @@ export default function SignInPage() {
 				if (response.ok) {
 					return response.json().then((data) => {
 						console.log("Email sent successfully:", data);
-						toast.success("Zostałeś zapisany!");
 					});
 				} else {
 					return response.json().then((data) => {
@@ -85,7 +84,7 @@ export default function SignInPage() {
 		<>
 			<Head>
 				<title>Insight Hunters | Zapisz się</title>
-				<link rel="shortcut icon" href="./file.png" type="image/x-icon" />
+				<link rel="shortcut icon" href="/file.png" type="image/x-icon" />
 			</Head>
 			<div className="flex flex-col h-screen">
 				<div className="mt-[70px] lg:mt-[80px] flex flex-col justify-center items-center h-full p-5">

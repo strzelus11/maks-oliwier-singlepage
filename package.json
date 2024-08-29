@@ -11,7 +11,6 @@
 		"deploy": "npm run build && npm run export && gh-pages -d out"
 	},
 	"dependencies": {
-		"@next/font": "^14.2.5",
 		"@react-email/components": "0.0.22",
 		"framer-motion": "^11.3.17",
 		"katex": "^0.16.11",

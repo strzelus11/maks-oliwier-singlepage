@@ -58,7 +58,7 @@ const Header = () => {
 				<div data-scroll-to="#Hero">
 					<img
 						className="h-[50px] cursor-pointer -mt-3"
-						src="./website.svg"
+						src="/website.svg"
 						alt=""
 					/>
 				</div>
@@ -100,7 +100,7 @@ const Header = () => {
 				<div data-scroll-to="#Hero">
 					<img
 						className="h-[50px] cursor-pointer -mt-3"
-						src="./website.svg"
+						src="/website.svg"
 						alt=""
 					/>
 				</div>

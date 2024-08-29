@@ -6,7 +6,7 @@ export default function TermsPage() {
 		<>
 			<Head>
 				<title>Insight Hunters | Zasady użytkowania</title>
-				<link rel="shortcut icon" href="./file.png" type="image/x-icon" />
+				<link rel="shortcut icon" href="/file.png" type="image/x-icon" />
 			</Head>
 			<div className="flex flex-col overflow-y-scroll h-screen pt-10">
 				<h1 className="text-3xl font-semibold text-gray-800 mb-6">
