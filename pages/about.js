@@ -6,7 +6,7 @@ export default function AboutPage() {
 	return (
 		<>
 			<Head>
-				<title>Physics | O nas</title>
+				<title>Insight Hunters | O nas</title>
 				<link rel="shortcut icon" href="./file.png" type="image/x-icon" />
 			</Head>
 			<div className="flex flex-col overflow-y-scroll h-screen">

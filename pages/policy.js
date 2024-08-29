@@ -5,7 +5,7 @@ export default function PolicyPage() {
 	return (
 		<>
 			<Head>
-				<title>Physics | Polityka prywatności</title>
+				<title>Insight Hunters | Polityka prywatności</title>
 				<link rel="shortcut icon" href="./file.png" type="image/x-icon" />
 			</Head>
 			<div className="flex flex-col overflow-y-scroll h-screen pt-10">

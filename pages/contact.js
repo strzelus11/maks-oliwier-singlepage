@@ -1,20 +1,37 @@
 import Header from "@/components/Header";
-import { motion } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 import { fadeIn } from "@/utils/motion";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import toast from "react-hot-toast";
 import Footer from "@/components/Footer";
 import SendButton from "@/components/SendButton";
 import Head from "next/head";
+import ErrorMessage from "@/components/ErrorMessage";
 
 export default function ContactPage() {
 	const [name, setName] = useState("");
-	const [email, setEmail] = useState("");
+    const [email, setEmail] = useState("");
+    const [emailError, setEmailError] = useState(null);
 	const [message, setMessage] = useState("");
+	const [loading, setLoading] = useState(false);
+
+	useEffect(() => {
+		const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+		if (email !== "") {
+			if (!regex.test(email)) {
+				setEmailError(true);
+			} else {
+				setEmailError(false);
+			}
+		} else {
+			setEmailError(null);
+		}
+	}, [email]);
 
 	async function sendEmail() {
-		if (name !== "" && email !== "" && message !== "") {
-			const response = await fetch("/api/send", {
+		if (name !== "" && email !== "" && message !== "" && !emailError) {
+			setLoading(true);
+			const emailPromise = fetch("/api/send", {
 				method: "POST",
 				headers: {
 					"Content-Type": "application/json",
@@ -24,24 +41,37 @@ export default function ContactPage() {
 					email,
 					message,
 				}),
+			}).then((response) => {
+				if (response.ok) {
+					return response.json().then((data) => {
+						console.log("Email sent successfully:", data);
+					});
+				} else {
+					return response.json().then((data) => {
+						console.error("Error sending email:", data.error);
+						throw new Error("Błąd przy wysyłaniu emaila");
+					});
+				}
 			});
 
-			const data = await response.json();
-			if (response.ok) {
-				console.log("Email sent successfully:", data);
-				toast.success("Wiadomość wysłana pomyślnie.");
-			} else {
-				console.error("Error sending email:", data.error);
-				toast.error("Błąd przy wysyłaniu emaila");
-			}
+			await toast
+				.promise(emailPromise, {
+					loading: "Wysyłanie...",
+					success: "Email wysłany pomyślnie!",
+					error: "Błąd przy wysyłaniu emaila",
+				})
+				.finally(() => {
+					setLoading(false);
+				});
 		} else {
 			toast.error("Uzupełnij wszystkie pola.");
 		}
 	}
+
 	return (
 		<>
 			<Head>
-				<title>Physics | Kontakt</title>
+				<title>Insight Hunters | Kontakt</title>
 				<link rel="shortcut icon" href="./file.png" type="image/x-icon" />
 			</Head>
 			<div className="flex flex-col h-screen">
@@ -53,10 +83,25 @@ export default function ContactPage() {
 						className="box lg:w-[40%]"
 					>
 						<h2 className="text-center text-3xl">Napisz do nas</h2>
-						<label>Email</label>
+						<div className="flex justify-between">
+							<label>Email</label>
+							<AnimatePresence>
+								{emailError !== null && (
+									<ErrorMessage
+										message={
+											emailError
+												? "Your email is invalid."
+												: "Your email is correct!"
+										}
+										error={emailError}
+									/>
+								)}
+							</AnimatePresence>
+						</div>
 						<input
 							type="email"
-							placeholder="Twój email"
+							placeholder="Twój adres email"
+							value={email}
 							onChange={(e) => setEmail(e.target.value)}
 						/>
 						<label>Imię i nazwisko</label>
@@ -71,7 +116,7 @@ export default function ContactPage() {
 							placeholder="Opisz problem, który chciałbyś z nami przedyskutować na zajęciach."
 							onChange={(e) => setMessage(e.target.value)}
 						></textarea>
-						<SendButton onClick={sendEmail} />
+						<SendButton onClick={sendEmail} disabled={loading} />
 					</motion.div>
 				</div>
 				<div>

@@ -1,9 +1,10 @@
 import { IoIosSend } from "react-icons/io";
 
-export default function SendButton({ onClick }) {
+export default function SendButton({ onClick, disabled }) {
 	return (
 		<button
-			onClick={onClick}
+            onClick={onClick}
+            disabled={disabled}
 			className="group btn-outline hover:scale-100 hover:bg-black/30 w-full flex justify-center mt-3"
 		>
 			Wyślij

@@ -5,7 +5,7 @@ export default function TermsPage() {
 	return (
 		<>
 			<Head>
-				<title>Physics | Zasady użytkowania</title>
+				<title>Insight Hunters | Zasady użytkowania</title>
 				<link rel="shortcut icon" href="./file.png" type="image/x-icon" />
 			</Head>
 			<div className="flex flex-col overflow-y-scroll h-screen pt-10">
