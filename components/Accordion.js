@@ -23,7 +23,7 @@ export default function Accordion() {
 		{
 			title: "Kiedy zaczynamy?",
 			content:
-				"Z uwagi na to, że zajęcia koła odbywają się w grupie, potrzebujemy zgromadzić co najmniej 3 chętnych. Zapisy trwają do 1 października 2024 roku.",
+				"Zapisy trwają do 1 października 2024 roku.",
 		},
 	];
 
