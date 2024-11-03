@@ -17,16 +17,17 @@ const tabContent = {
 		"Jeżeli chcesz zacząć naukę programowania i nie wiesz jak zacząć, to będziemy dla Ciebie wsparciem.",
 	],
 	"Data Analysis": [
-		"Nie możesz poradzić sobie ze statystyką na studiach?, albo potrzebujesz jej znajomości w pracy?, nie przejmuj się!!!. Analiza danych jest bardzo przydatną i opłacaną umiejętnością. Duże korporacje opierają część swojego sukcesu na odpowiednich analizach. Inwestorzy przeprowadzają analizy techniczne, które pozwalają im podejmować lepsze decyzje. Ilość danych na świecie nieustannie rośnie, a im więcej ich jest tym więcej informacji zawierają. Naucz się  wyciągać te informacje!!!.",
+		"Nie możesz poradzić sobie ze statystyką na studiach?, albo potrzebujesz jej znajomości w pracy? Pomożemy Ci! Analiza danych jest bardzo przydatną i opłacaną umiejętnością. Duże korporacje opierają część swojego sukcesu na odpowiednich analizach. Inwestorzy przeprowadzają analizy techniczne, które pozwalają im podejmować lepsze decyzje. Ilość danych na świecie nieustannie rośnie, a im więcej ich jest, tym więcej informacji zawierają. Naucz się  zarządzać tymi danymi!",
 		"Istnieje wiele narzędzi do analizy danych. My nauczymy Cię programistycznego podejścia używając języka Python i jego popularnych bibliotek Pandas, Numpy i Matplotlib.",
 	],
 	"Scikit-Learn": [
-		"Czy zastanawiałeś się kiedyś jaki sekret stoi za działaniem sztucznej inteligencji?, co to właściwie znaczy, że program jest inteligentny?. Okazuję się, że odpowiedź na te pytania nie jest wcale taka trudna. Jeśli chciałbyś stworzyć swoją pierwszą sztuczną inteligencję lub udoskonalić umiejętności z analizy danych, to jesteśmy gotowi aby towarzyszyć Ci w tej interesującej przygodzie",
+		"Czy zastanawiałeś się kiedyś jaki sekret stoi za działaniem sztucznej inteligencji? Co to właściwie znaczy, że program jest inteligentny? Okazuję się, że odpowiedź na te pytania nie jest wcale taka trudna. Jeśli chciałbyś stworzyć swoją pierwszą sztuczną inteligencję lub udoskonalić umiejętności z analizy danych, to jesteśmy gotowi aby towarzyszyć Ci w tej interesującej przygodzie",
 		"Oferujemy naukę technik i narzędzi w zakresie popularnej biblioteki Python Scikit-learn, takich jak regresja liniowa, logistyczna, L1, L2, L1L2 oraz wiele metod klasyfikacji danych. Dodatkowo nauczysz się również przygotowywać i organizować zestawy danych do treningu modeli.",
 	],
 	TensorFlow: [
-		"Jedną z najciekawszych dziedzin uczenia maszynowego jest głębokie uczenie maszynowe. Polega to na tworzeniu modeli opartych, które opierają swoje funkcjonowanie na sieciach neuronowych. Tensorflow jest dużym frameworkiem, umożliwiającym sprawne implementowanie tych modeli.",
-		"Jeżeli marzysz o pracowaniu nad najnowszymi technologiami AI takimi jak generatory zdjęć, chatboty i wiele innych, znając Tensorflow jesteś w stanie osiągnąć wielkie rezultaty w kilkunastu linijkach kodu.",
+		"TensorFlow to jedna z najpopularniejszych bibliotek do tworzenia zaawansowanych modeli AI. Wykorzystywana przez największe firmy technologiczne na świecie, daje niesamowite możliwości w dziedzinie analizy danych, przetwarzania obrazów, rozpoznawania mowy i wielu innych. Nasze korepetycje obejmują podstawowe techniki pracy z Tensorflow.",
+		"Nauczysz się u nas jak przygotowywać zestawy danych to treningu sieci neuronowych, jak tworzyć różne typy tych sieci (konwolucyjne, rekurencyjne itp.) oraz jak je optymalizować aby osiągnąć najpelsze rezultaty. Pokażemy Ci również ich konkretne zastosowania pracując nad standardowymi i  praktycznymi przykładami z życia codziennego.",
+		"Dodatkowo jeżeli jesteś zainteresowany detalami działania tych modeli, zapoznamy Cię z matematyką, która stoi za magią sieci neuronowych.",
 	],
 };
 

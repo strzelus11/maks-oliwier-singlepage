@@ -14,7 +14,7 @@ const oliwierAchiev = [
 	"3. klasa liceum (2020/2021) – finalista Olimpiady Matematycznej, półfinalista Turnieju Młodych Fizyków, pierwsza nagroda w Wielkopolskiej Lidze Matematycznej, 2. miejsce w konkursie Physics Cup",
 	"1. rok studiów (kierunek fizyka, Uniwersytet im. Adama Mickiewicza w Poznaniu) (2021/2022) – indywidualny projekt: badania nad fizyką windsurfingu na hydroskrzydłach",
 	"2. rok studiów (2022/2023) – członek jury w Wielkopolskiej Superlidze Liceów z fizyki i współautor zadań, zdobycie pierwszej nagrody i wyróżnienia w międzynarodowym konkursie Mandles Prize for Hydrofoil Excellence za artykuły z badań na temat windsurfingu na hydroskrzydłach",
-	"3. rok studiów (2023/2024) – praca nad licencjatem z silnie skorelowanych układów kwantowych wielu ciał",
+	"3. rok studiów (2023/2024) – obroniony licencjat na temat zastosowania metody wariacyjnej do kwantowych układów wielu ciał",
 ];
 
 const links = [

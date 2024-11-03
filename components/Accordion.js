@@ -23,7 +23,7 @@ export default function Accordion() {
 		{
 			title: "Kiedy zaczynamy?",
 			content:
-				"Zapisy trwają do 1 października 2024 roku.",
+				"Uruchomienie koła czeka jeszcze na odpowiednią liczbę uczestników. Do tego czasu oferujemy chętnym zajęcia indywidualne przygotowujące do olimpiady w cenie standardowych korepetycji.",
 		},
 	];
 
