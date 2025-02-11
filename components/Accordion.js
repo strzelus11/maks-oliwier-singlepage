@@ -23,7 +23,8 @@ export default function Accordion() {
 		{
 			title: "Kiedy zaczynamy?",
 			content:
-				"Uruchomienie koła czeka jeszcze na odpowiednią liczbę uczestników. Do tego czasu oferujemy chętnym zajęcia indywidualne przygotowujące do olimpiady w cenie standardowych korepetycji.",
+				"Uruchomienie koła czeka jeszcze na odpowiednią liczbę uczestników. Zainteresowanych prosimy o wysłanie nam wiadomości wyrażającej potencjalną chęć uczestnictwa. Będziemy informowali zgłoszonych o szczegółach mailowo.
+",
 		},
 	];
 
