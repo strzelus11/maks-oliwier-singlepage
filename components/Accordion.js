@@ -23,8 +23,7 @@ export default function Accordion() {
 		{
 			title: "Kiedy zaczynamy?",
 			content:
-				"Uruchomienie koła czeka jeszcze na odpowiednią liczbę uczestników. Zainteresowanych prosimy o wysłanie nam wiadomości wyrażającej potencjalną chęć uczestnictwa. Będziemy informowali zgłoszonych o szczegółach mailowo.
-",
+				"Uruchomienie koła czeka jeszcze na odpowiednią liczbę uczestników. Zainteresowanych prosimy o wysłanie nam wiadomości wyrażającej potencjalną chęć uczestnictwa. Będziemy informowali zgłoszonych o szczegółach mailowo.",
 		},
 	];
 
