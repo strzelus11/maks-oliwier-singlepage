@@ -6,7 +6,21 @@ export default function TermsPage() {
 		<>
 			<Head>
 				<title>Insight Hunters | Zasady użytkowania</title>
-				<link rel="shortcut icon" href="/file.png" type="image/x-icon" />
+				<link rel="icon" href="/file.png" type="image/png" />
+				<meta name="robots" content="index, follow" />
+				<meta
+					name="keywords"
+					content="korepetycje, fizyka, matematyka, programowanie, nauka, tutoring, szkolenia"
+				/>
+				<meta
+					property="og:title"
+					content="Insight Hunters – Korepetycje i Szkolenia"
+				/>
+				<meta
+					property="og:description"
+					content="Profesjonalne korepetycje z fizyki, matematyki i programowania. Online lub stacjonarnie."
+				/>
+				<meta property="og:url" content="https://insight-hunters.pl/" />
 			</Head>
 			<div className="flex flex-col overflow-y-scroll h-screen pt-10">
 				<h1 className="text-3xl font-semibold text-gray-800 mb-6">

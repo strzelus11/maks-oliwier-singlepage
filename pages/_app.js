@@ -3,13 +3,18 @@ import Header from "@/components/Header";
 import "@/styles/globals.css";
 import { Exo_2 } from "next/font/google";
 import { Toaster } from "react-hot-toast";
+import i18n from "../i18n";
 import Head from "next/head";
+import { appWithTranslation } from "next-i18next";
 
 const font = Exo_2({ subsets: ["latin"] });
 
-export default function App({ Component, pageProps }) {
+function App({ Component, pageProps }) {
 	return (
-		<main className={font.className}>
+		<div className={font.className}>
+			<Head>
+				<meta name="viewport" content="width=device-width, initial-scale=1" />
+			</Head>
 			<Toaster
 				position="top-center"
 				reverseOrder={false}
@@ -27,11 +32,12 @@ export default function App({ Component, pageProps }) {
 					},
 				}}
 			/>
-			<Head>
-				<meta name="viewport" content="width=device-width, initial-scale=1" />
-			</Head>
 			<Header />
-			<Component {...pageProps} />
-		</main>
+			<main>
+				<Component {...pageProps} />
+			</main>
+		</div>
 	);
 }
+
+export default appWithTranslation(App);

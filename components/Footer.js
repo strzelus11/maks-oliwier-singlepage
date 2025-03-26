@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { FaFacebookSquare, FaInstagram, FaYoutube } from "react-icons/fa";
+import { FaFacebook, FaInstagram, FaYoutube } from "react-icons/fa";
 
 export default function Footer() {
 	return (
@@ -29,7 +29,14 @@ export default function Footer() {
 					target="_blank"
 					rel="noopener noreferrer"
 				>
-					<FaFacebookSquare className="size-7 hover:text-primary transition-all delay-150 duration-300 hover:scale-105" />
+					<FaFacebook className="size-7 hover:text-primary transition-all delay-150 duration-300 hover:scale-105" />
+				</Link>
+				<Link
+					href="https://www.instagram.com/"
+					target="_blank"
+					rel="noopener noreferrer"
+				>
+					<FaInstagram className="size-7 hover:text-primary transition-all delay-150 duration-300 hover:scale-105" />
 				</Link>
 				<Link
 					href="https://www.youtube.com/@InsightHunters"

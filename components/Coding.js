@@ -36,11 +36,11 @@ export default function Coding() {
 
 	return (
 		<SectionLayout
-			id="Programowanie"
-			title="Programowanie"
+			id="link3"
+			title="Data Science"
 			subtitle="Technologie, których nauczamy"
 		>
-			<div className="w-full mt-5 sm:mt-0">
+			<div className="max-w-7xl mt-5 sm:mt-0">
 				<div className="bg-black h-[50px] w-full flex items-center justify-around gap-2 rounded-t-xl">
 					{Object.keys(tabContent).map((tab) => (
 						<TabButton

@@ -4,7 +4,7 @@ import SectionLayout from "./SectionLayout";
 export default function Offer() {
     return (
 			<SectionLayout
-				id="Oferta"
+				id="link5"
 				title="Oferta"
 				subtitle="Wszystkie zajęcia online"
 			>

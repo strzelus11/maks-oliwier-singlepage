@@ -4,12 +4,14 @@ import PlanckEquation from "./Equation";
 import SectionLayout from "./SectionLayout";
 import ToggleButton from "./ToggleButton";
 import SVG from "./SVG";
+import { useTranslation } from "react-i18next";
 
 export default function Tutoring() {
+    const { t } = useTranslation();
 	const [advanced, setAdvanced] = useState(true);
 	return (
-		<SectionLayout id="Korepetycje" title="O korepetycjach">
-			<div className="text-lg bg-secondary sm:px-10 p-5 rounded-xl leading-6 relative flex justify-center min-h-[30rem] mt-5 sm:mt-0">
+		<SectionLayout id="link1" title="O korepetycjach">
+			<div className="text-lg bg-secondary sm:px-10 p-5 rounded-xl leading-6 relative flex justify-center min-h-[30rem] max-w-7xl mt-5 sm:mt-0">
 				<ToggleButton advanced={advanced} setAdvanced={setAdvanced} />
 				<AnimatePresence mode="wait">
 					{advanced ? (
@@ -26,21 +28,9 @@ export default function Tutoring() {
 							exit={{ opacity: 0, translateY: 50, scale: 0.95 }}
 							transition={{ duration: 0.3 }}
 						>
-							<div className="text-gray-300 text-justify">
-								Przy nauczaniu zwracamy szczególną uwagę na
-								&quot;insight&quot;, czyli dogłębne rozumienie. Sprawia ono, że
-								zapamiętanie wzorów czy zasad nie stanowi żadnego problemu.
-								Przykładem może być wzór na rozkład Plancka:
-							</div>
+							<div className="text-gray-300 text-justify">{t("Tutoring1")}</div>
 							<PlanckEquation />
-							<div className="text-gray-300 text-justify">
-								Pamiętam jak nie byłem w stanie go zapamiętać. Rzeczywiście może
-								stanowić to mały kłopot. Teraz jednak kiedy widzę, że siedzi w
-								nim gęstość stanów swobodnego gazu fotonowego, energia fotonu
-								oraz rozkład Bosego-Einsteina, wzór staje się zupełnie znajomy.
-								To właśnie insight sprawia, że niektóre zadania można policzyć w
-								pamięci, podczas gdy inni sięgają po kalkulator.
-							</div>
+							<div className="text-gray-300 text-justify">{t("Tutoring2")}</div>
 							<div className="border w-[90%] border-gray-500" />
 							<div className="text-white text-justify">
 								W słynnym dialogu z filmu Oppenheimer, główny bohater przyznaje,

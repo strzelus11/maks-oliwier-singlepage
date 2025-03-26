@@ -4,6 +4,7 @@ import Hero from "@/components/Hero";
 import Offer from "@/components/Offer";
 import Olimpic from "@/components/Olimpic";
 import Tutoring from "@/components/Tutoring";
+import WebDev from "@/components/WebDev";
 import Head from "next/head";
 
 export default function Home() {
@@ -11,7 +12,21 @@ export default function Home() {
 		<>
 			<Head>
 				<title>Insight Hunters</title>
-				<link rel="shortcut icon" href="/file.png" type="image/x-icon" />
+				<link rel="icon" href="/file.png" type="image/png" />
+				<meta name="robots" content="index, follow" />
+				<meta
+					name="keywords"
+					content="korepetycje, fizyka, matematyka, programowanie, nauka, tutoring, szkolenia"
+				/>
+				<meta
+					property="og:title"
+					content="Insight Hunters – Korepetycje i Szkolenia"
+				/>
+				<meta
+					property="og:description"
+					content="Profesjonalne korepetycje z fizyki, matematyki i programowania. Online lub stacjonarnie."
+				/>
+				<meta property="og:url" content="https://insight-hunters.pl/" />
 			</Head>
 			<div className="flex flex-col overflow-y-scroll full mt-[70px] lg:mt-[80px] snap-mandatory scroll-smooth">
 				<div>
@@ -26,6 +41,9 @@ export default function Home() {
 					</div>
 					<div className="min-h-screen snap-start lg:snap-center">
 						<Coding />
+					</div>
+					<div className="min-h-screen snap-start lg:snap-center">
+						<WebDev />
 					</div>
 					<div className="min-h-screen snap-start lg:snap-center">
 						<Offer />

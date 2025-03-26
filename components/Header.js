@@ -5,8 +5,8 @@ import { slideIn } from "@/utils/motion";
 import ContactButton from "./ContactButton";
 import { useRouter } from "next/router";
 import { usePathname } from "next/navigation";
-
-const links = ["Korepetycje", "Koło olimpijskie", "Programowanie", "Oferta"];
+import { useTranslation } from "react-i18next";
+import LanguageSwitcher from "./LanguageSwitcher";
 
 const Header = () => {
 	const inactiveLink =
@@ -15,6 +15,9 @@ const Header = () => {
 		"decoration-secondary",
 		"decoration-white"
 	);
+
+    const { t } = useTranslation();
+    const links = ["link1", "link2", "link3", "link4", "link5"];
 
 	const [navOpen, setNavOpen] = useState(false);
 
@@ -69,13 +72,14 @@ const Header = () => {
 							key={link}
 							className={inactiveLink}
 						>
-							{link}
+							{t(link)}
 						</div>
 					))}
 					<Link className={inactiveLink} href={"/about"}>
 						O nas
 					</Link>
-				</nav>
+                </nav>
+                {/* <LanguageSwitcher /> */}
 				<ContactButton />
 			</header>
 			<header
@@ -140,7 +144,7 @@ const Header = () => {
 											key={link}
 											className={inactiveLink}
 										>
-											{link}
+											{t(link)}
 										</div>
 									))}
 									<Link
