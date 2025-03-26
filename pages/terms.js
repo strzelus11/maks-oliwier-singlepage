@@ -6,6 +6,10 @@ export default function TermsPage() {
 		<>
 			<Head>
 				<title>Insight Hunters | Zasady użytkowania</title>
+				<meta
+					name="description"
+					content="Zajęcia indywidualne z fizyki, matematyki i programowania. Przygotowanie do matury, olimpiad i rozwój pasji. Online i stacjonarnie."
+				/>
 				<link rel="icon" href="/file.png" type="image/png" />
 				<meta name="robots" content="index, follow" />
 				<meta
