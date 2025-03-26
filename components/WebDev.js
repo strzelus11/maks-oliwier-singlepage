@@ -117,7 +117,7 @@ export default function WebDev() {
 							onClick={() => setSelectedTech(null)}
 						>
 							<motion.div
-								className="bg-secondary/85 rounded-xl p-5 sm:p-10 mx-4 flex gap-3 relative min-h-[25rem] max-w-4xl"
+								className="bg-secondary/85 rounded-xl p-5 sm:p-10 mx-4 relative min-h-[25rem] max-w-4xl"
 								onClick={(e) => e.stopPropagation()}
 							>
 								<motion.div className="absolute inset-0 z-[-1]">
