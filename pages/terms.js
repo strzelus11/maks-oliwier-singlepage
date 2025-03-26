@@ -20,7 +20,7 @@ export default function TermsPage() {
 					property="og:description"
 					content="Profesjonalne korepetycje z fizyki, matematyki i programowania. Online lub stacjonarnie."
 				/>
-				<meta property="og:url" content="https://insight-hunters.pl/" />
+				<meta property="og:url" content="https://insighthunters.pl/" />
 			</Head>
 			<div className="flex flex-col overflow-y-scroll h-screen pt-10">
 				<h1 className="text-3xl font-semibold text-gray-800 mb-6">
