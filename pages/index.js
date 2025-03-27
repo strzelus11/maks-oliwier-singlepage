@@ -11,26 +11,46 @@ export default function Home() {
 	return (
 		<>
 			<Head>
-				<title>Insight Hunters</title>
+				<title>Insight Hunters – Profesjonalne korepetycje</title>
 				<meta
 					name="description"
-					content="Zajęcia indywidualne z fizyki, matematyki i programowania. Przygotowanie do matury, olimpiad i rozwój pasji. Online i stacjonarnie."
+					content="Dołącz do Insight Hunters, aby uzyskać profesjonalne korepetycje z przedmiotów ścisłych. Sesje online i stacjonarne z fizyki, matematyki i programowania. Podnieś swoje wyniki już dziś!"
 				/>
-				<link rel="icon" href="/file.png" type="image/png" />
 				<meta name="robots" content="index, follow" />
-				<meta
-					name="keywords"
-					content="korepetycje, fizyka, matematyka, programowanie, nauka, tutoring, szkolenia"
-				/>
+				<link rel="canonical" href="https://insighthunters.pl/" />
+
+				<meta property="og:type" content="website" />
 				<meta
 					property="og:title"
-					content="Insight Hunters – Korepetycje i Szkolenia"
+					content="Insight Hunters – Profesjonalne korepetycje"
 				/>
 				<meta
 					property="og:description"
-					content="Profesjonalne korepetycje z fizyki, matematyki i programowania. Online lub stacjonarnie."
+					content="Dołącz do Insight Hunters, aby uzyskać profesjonalne korepetycje z przedmiotów ścisłych. Sesje online i stacjonarne z fizyki, matematyki i programowania."
+				/>
+				<meta
+					property="og:image"
+					content="https://insighthunters.pl/og-image.jpg"
 				/>
 				<meta property="og:url" content="https://insighthunters.pl/" />
+				<meta property="og:site_name" content="Insight Hunters" />
+
+				<meta name="twitter:card" content="summary_large_image" />
+				<meta
+					name="twitter:title"
+					content="Insight Hunters – Profesjonalne korepetycje"
+				/>
+				<meta
+					name="twitter:description"
+					content="Dołącz do Insight Hunters, aby uzyskać profesjonalne korepetycje z przedmiotów ścisłych. Sesje online i stacjonarne z fizyki, matematyki i programowania."
+				/>
+				<meta
+					name="twitter:image"
+					content="https://insighthunters.pl/twitter-image.jpg"
+				/>
+
+				<meta name="author" content="Insight Hunters" />
+				<link rel="icon" href="/favicon.ico" type="image/x-icon" />
 			</Head>
 			<div className="flex flex-col full mt-[70px] lg:mt-[80px]">
 				<div>
