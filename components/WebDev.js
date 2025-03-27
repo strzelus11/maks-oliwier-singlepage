@@ -71,13 +71,13 @@ const techData = [
 		description:
 			"Node.js pozwala na używanie JavaScript na serwerze, co otwiera przed nami drzwi do tworzenia kompletnych aplikacji wyłącznie w jednym języku. Podczas zajęć poznamy, jak budować serwery HTTP, tworzyć RESTful API i obsługiwać operacje na danych w czasie rzeczywistym. Dzięki Node.js będziesz w stanie stworzyć wszechstronną infrastrukturę backendową, np. dla aplikacji czatowych czy aplikacji e-commerce, i zrozumiesz, jak działa środowisko asynchroniczne, co jest kluczowe dla nowoczesnych aplikacji internetowych.",
 	},
-	{
-		name: "Tailwind CSS",
-		icon: SiTailwindcss,
-        image: "tailwind",
-		description:
-			"Tailwind CSS to framework, który umożliwia szybkie tworzenie stylów za pomocą klas użytecznościowych. Podczas korepetycji nauczysz się tworzyć responsywne interfejsy w rekordowym czasie. Dzięki Tailwind CSS zapomnisz o pisaniu złożonych reguł CSS – wszystkie potrzebne style są gotowe do użycia w formie klas! Nauczę Cię, jak efektywnie zarządzać wyglądem aplikacji i dostosować Tailwind do własnych potrzeb. W efekcie będziesz w stanie projektować nowoczesne strony w ułamku czasu.",
-	},
+	// {
+	// 	name: "Tailwind CSS",
+	// 	icon: SiTailwindcss,
+    //     image: "tailwind",
+	// 	description:
+	// 		"Tailwind CSS to framework, który umożliwia szybkie tworzenie stylów za pomocą klas użytecznościowych. Podczas korepetycji nauczysz się tworzyć responsywne interfejsy w rekordowym czasie. Dzięki Tailwind CSS zapomnisz o pisaniu złożonych reguł CSS – wszystkie potrzebne style są gotowe do użycia w formie klas! Nauczę Cię, jak efektywnie zarządzać wyglądem aplikacji i dostosować Tailwind do własnych potrzeb. W efekcie będziesz w stanie projektować nowoczesne strony w ułamku czasu.",
+	// },
 	{
 		name: "Framer Motion",
 		icon: TbBrandFramerMotion,
@@ -96,14 +96,14 @@ export default function WebDev() {
 			subtitle="Nowoczesne strony internetowe"
 		>
 			<div className="relative flex flex-col items-center justify-center min-h-[25rem]">
-				<div className="grid grid-cols-2 sm:grid-cols-5 gap-6 max-w-5xl">
+				<div className="grid grid-cols-3 gap-6 max-w-5xl">
 					{techData.map((tech, index) => (
 						<div
 							key={index}
-							className="bg-secondary border border-secondary hover:border-primary hover:scale-105 rounded-lg shadow-lg flex items-center justify-center size-[8rem] lg:size-[10rem] cursor-pointer transition-all duration-300 delay-150"
+							className="bg-secondary border border-secondary hover:border-primary hover:scale-105 rounded-lg shadow-lg flex items-center justify-center size-[5rem] lg:size-[8rem] cursor-pointer transition-all duration-300 delay-150"
 							onClick={() => setSelectedTech(tech)}
 						>
-							<tech.icon className="size-10 text-primary" />
+							<tech.icon className="size-7 sm:size-10 text-primary" />
 						</div>
 					))}
 				</div>
