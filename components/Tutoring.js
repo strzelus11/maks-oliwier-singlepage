@@ -7,7 +7,7 @@ import SVG from "./SVG";
 import { useTranslation } from "react-i18next";
 
 export default function Tutoring() {
-    const { t } = useTranslation();
+	const { t } = useTranslation();
 	const [advanced, setAdvanced] = useState(true);
 	return (
 		<SectionLayout id="link1" title="O korepetycjach">
@@ -28,15 +28,15 @@ export default function Tutoring() {
 							exit={{ opacity: 0, translateY: 50, scale: 0.95 }}
 							transition={{ duration: 0.3 }}
 						>
-							<div className="text-gray-300 text-justify">{t("Tutoring1")}</div>
+							<div className="text-gray-300">{t("Tutoring1")}</div>
 							<PlanckEquation />
-							<div className="text-gray-300 text-justify">{t("Tutoring2")}</div>
+							<div className="text-gray-300">{t("Tutoring2")}</div>
 							<div className="border w-[90%] border-gray-500" />
-							<div className="text-white text-justify">
+							<div className="text-white">
 								W słynnym dialogu z filmu Oppenheimer, główny bohater przyznaje,
 								że ma insight:
 							</div>
-							<div className="text-gray-300 text-justify sm:w-[80%]">
+							<div className="text-gray-300 sm:w-[80%]">
 								<span className="text-white font-semibold italic">
 									Niels Bohr:
 								</span>{" "}
@@ -66,7 +66,7 @@ export default function Tutoring() {
 							<h2 className="text-white text-2xl">
 								Korzystamy z nowoczesnych technik nauczania:
 							</h2>
-							<div className="text-gray-300 text-justify flex gap-3 items-start">
+							<div className="text-gray-300 flex gap-3 items-start">
 								<SVG className="size-7 text-primary" />
 								<div className="w-full">
 									Równania, przekształcenia i wzory zapisujemy na żywo w
@@ -75,7 +75,7 @@ export default function Tutoring() {
 									notatki z zajęć do pliku pdf, który otrzymasz.
 								</div>
 							</div>
-							<div className="text-gray-300 text-justify flex gap-3 items-start">
+							<div className="text-gray-300 flex gap-3 items-start">
 								<SVG className="size-7 text-primary" />
 								<div className="w-full">
 									Zrozumienie wielu zjawisk fizycznych jest łatwiejsze, gdy się
@@ -85,7 +85,7 @@ export default function Tutoring() {
 									naturalną intuicję fizyczną.
 								</div>
 							</div>
-							<div className="text-gray-300 text-justify flex gap-3 items-start">
+							<div className="text-gray-300 flex gap-3 items-start">
 								<SVG className="size-7 text-primary" />
 								<div className="w-full">
 									Nasze zajęcia przygotują Cię do wydajnego radzenia sobie z

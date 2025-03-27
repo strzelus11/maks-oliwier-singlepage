@@ -6,7 +6,7 @@ import ContactButton from "./ContactButton";
 import { useRouter } from "next/router";
 import { usePathname } from "next/navigation";
 import { useTranslation } from "react-i18next";
-import LanguageSwitcher from "./LanguageSwitcher";
+// import LanguageSwitcher from "./LanguageSwitcher";
 
 const Header = () => {
 	const inactiveLink =

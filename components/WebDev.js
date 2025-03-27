@@ -91,7 +91,7 @@ export default function WebDev() {
 	const [selectedTech, setSelectedTech] = useState(null);
 	return (
 		<SectionLayout
-			id="link4"
+			id="link3"
 			title="Web Development"
 			subtitle="Nowoczesne strony internetowe"
 		>

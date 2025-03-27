@@ -36,7 +36,7 @@ export default function Coding() {
 
 	return (
 		<SectionLayout
-			id="link3"
+			id="link2"
 			title="Data Science"
 			subtitle="Technologie, których nauczamy"
 		>
