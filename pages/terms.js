@@ -26,15 +26,15 @@ export default function TermsPage() {
 				/>
 				<meta property="og:url" content="https://insighthunters.pl/" />
 			</Head>
-			<div className="flex flex-col overflow-y-scroll h-screen pt-10">
-				<h1 className="text-3xl font-semibold text-gray-800 mb-6">
+			<div className="flex flex-col min-h-[100vh] pt-[70px] lg:pt-[80px]">
+				<h1 className="text-3xl text-white text-center font-semibold my-5">
 					Zasady użytkowania
 				</h1>
-				<div className="flex-grow text-gray-400 text-lg space-y-4 p-5 bg-secondary rounded-xl mx-5 mb-10">
+				<div className="flex-grow text-gray-300 space-y-4 p-5 bg-secondary rounded-xl mx-5 mb-10">
 					<ul className="list-disc ml-6 space-y-3">
 						<li>
-							Witamy na insighthunters.vercel.app. Korzystając z naszej strony,
-							zgadzasz się na niniejszy Regulamin.
+							Witamy na insighthunters.pl Korzystając z naszej strony, zgadzasz
+							się na niniejszy Regulamin.
 						</li>
 						<li>
 							Twój dostęp i korzystanie ze strony są uzależnione od
@@ -85,7 +85,9 @@ export default function TermsPage() {
 						</li>
 					</ul>
 				</div>
-				<Footer />
+				<div>
+					<Footer />
+				</div>
 			</div>
 		</>
 	);

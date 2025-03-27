@@ -26,11 +26,11 @@ export default function PolicyPage() {
 				/>
 				<meta property="og:url" content="https://insighthunters.pl/" />
 			</Head>
-			<div className="flex flex-col overflow-y-scroll h-screen pt-10">
-				<h1 className="text-3xl font-semibold text-gray-800 mb-6">
+			<div className="flex flex-col min-h-[100vh] pt-[70px] lg:pt-[80px]">
+				<h1 className="text-3xl text-white text-center font-semibold my-5">
 					Polityka prywatności
 				</h1>
-				<div className="flex-grow text-gray-400 text-lg space-y-4 p-5 bg-secondary rounded-xl mx-5 mb-10">
+				<div className="flex-grow text-gray-300 space-y-4 p-5 bg-secondary rounded-xl mx-5 mb-10">
 					<p>
 						Dane, są zbierane wtedy i tylko wtedy, gdy użytkownik się z nami
 						kontaktuje, czy to aby zadać pytanie, czy przez zapisywanie się na
@@ -67,7 +67,9 @@ export default function PolicyPage() {
 						</li>
 					</ol>
 				</div>
-				<Footer />
+				<div>
+					<Footer />
+				</div>
 			</div>
 		</>
 	);

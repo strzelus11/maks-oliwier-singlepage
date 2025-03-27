@@ -27,8 +27,8 @@ export default function AboutPage() {
 				/>
 				<meta property="og:url" content="https://insighthunters.pl/" />
 			</Head>
-			<div className="flex flex-col overflow-y-scroll h-screen">
-				<div className="mt-[70px] lg:mt-[80px]">
+			<div className="flex flex-col min-h-[100vh]">
+				<div className="pt-[70px] lg:pt-[80px]">
 					<AboutComponent />
 				</div>
 				<div>

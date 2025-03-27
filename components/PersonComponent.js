@@ -15,9 +15,9 @@ export default function PersonComponent({ name, text, achievements, links, image
 				</div>
 				<div>
 					<h2 className="text-white text-3xl">{name}</h2>
-					<p className="text-gray-400 text-lg text-justify">{text}</p>
+					<p className="text-gray-400 text-lg">{text}</p>
 					<h3 className="text-xl text-white my-5">Osiągnięcia:</h3>
-					<div className="text-gray-400 text-lg">
+					<div className="text-gray-400">
 						{achievements.map((item, index) => (
 							<div key={index} className="flex gap-3 items-start mb-2">
 								<SVG className="size-7 text-primary" />
