@@ -35,7 +35,7 @@ const links = [
 export default function AboutComponent() {
 	return (
 		<SectionLayout title="O nas">
-			<div className="flex flex-col gap-10">
+			<div className="flex flex-col gap-10 max-w-4xl">
 				<PersonComponent
 					name="Oliwier Urbański"
 					image="/oliwier.png"

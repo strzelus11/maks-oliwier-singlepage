@@ -10,7 +10,7 @@ export default function SectionLayout({
 }) {
 	return (
 		<section
-			className={`flex flex-col screen justify-center items-center p-5 sm:p-10 relative w-full ${className}`}
+			className={`flex flex-col screen justify-center items-center p-3 sm:p-10 relative w-full ${className}`}
 			id={id}
 		>
 			<motion.h1

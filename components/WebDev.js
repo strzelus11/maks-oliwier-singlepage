@@ -96,11 +96,11 @@ export default function WebDev() {
 			subtitle="Nowoczesne strony internetowe"
 		>
 			<div className="relative flex flex-col items-center justify-center min-h-[25rem]">
-				<div className="grid grid-cols-2 sm:grid-cols-5 gap-6 max-w-3xl">
+				<div className="grid grid-cols-2 sm:grid-cols-5 gap-6 max-w-5xl">
 					{techData.map((tech, index) => (
 						<div
 							key={index}
-							className="bg-secondary border border-secondary hover:border-primary hover:scale-105 rounded-lg shadow-lg flex items-center justify-center size-32 cursor-pointer transition-all duration-300 delay-150"
+							className="bg-secondary border border-secondary hover:border-primary hover:scale-105 rounded-lg shadow-lg flex items-center justify-center size-[8rem] lg:size-[10rem] cursor-pointer transition-all duration-300 delay-150"
 							onClick={() => setSelectedTech(tech)}
 						>
 							<tech.icon className="size-10 text-primary" />
@@ -117,7 +117,7 @@ export default function WebDev() {
 							onClick={() => setSelectedTech(null)}
 						>
 							<motion.div
-								className="bg-secondary/85 rounded-xl p-5 sm:p-10 mx-4 relative min-h-[25rem] max-w-4xl"
+								className="bg-secondary/70 rounded-xl aspect-square flex justify-center items-center p-5 sm:p-10 mx-4 relative h-[20rem] sm:min-h-[30rem]"
 								onClick={(e) => e.stopPropagation()}
 							>
 								<motion.div className="absolute inset-0 z-[-1]">
@@ -131,12 +131,12 @@ export default function WebDev() {
 									/>
 								</motion.div>
 								<div>
-									<h2 className="text-3xl font-semibold mb-4 text-white">
+									<h2 className="text-3xl md:text-5xl font-semibold mb-4 text-white">
 										{selectedTech.name}
 									</h2>
-									<p className="text-gray-300 text-lg">
+									{/* <p className="text-gray-300 text-lg">
 										{selectedTech.description}
-									</p>
+									</p> */}
 								</div>
 								<div
 									className="absolute -top-3 -left-3 bg-secondary cursor-pointer text-white transition duration-300 delay-150 hover:text-primary hover:scale-105 border border-secondary hover:border-primary rounded-full p-1"

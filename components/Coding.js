@@ -40,7 +40,7 @@ export default function Coding() {
 			title="Data Science"
 			subtitle="Technologie, których nauczamy"
 		>
-			<div className="max-w-7xl mt-5 sm:mt-0">
+			<div className="max-w-5xl mt-5 sm:mt-0">
 				<div className="bg-black h-[50px] w-full flex items-center justify-around gap-2 rounded-t-xl">
 					{Object.keys(tabContent).map((tab) => (
 						<TabButton
@@ -72,7 +72,7 @@ export default function Coding() {
 							{tabContent[activeTab].map((content, index) => (
 								<div
 									key={index}
-									className="text-gray-300 text-justify flex gap-3 items-start mb-4"
+									className="text-gray-300 flex gap-3 items-start mb-4"
 								>
 									<SVG className="size-7 text-primary" />
 									<div className="w-full">{content}</div>

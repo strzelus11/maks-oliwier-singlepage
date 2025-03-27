@@ -32,27 +32,27 @@ export default function Home() {
 				/>
 				<meta property="og:url" content="https://insighthunters.pl/" />
 			</Head>
-			<div className="flex flex-col overflow-y-scroll full mt-[70px] lg:mt-[80px] snap-mandatory scroll-smooth">
+			<div className="flex flex-col overflow-y-scroll full mt-[70px] lg:mt-[80px]">
 				<div>
-					<div className="min-h-screen snap-start lg:snap-center">
+					<div className="screen">
 						<Hero />
 					</div>
-					<div className="min-h-screen snap-start lg:snap-center">
+					<div className="screen">
 						<Tutoring />
 					</div>
-					<div className="min-h-screen snap-start lg:snap-center">
+					<div className="screen">
 						<Olimpic />
 					</div>
-					<div className="min-h-screen snap-start lg:snap-center">
+					<div className="screen">
 						<Coding />
 					</div>
-					<div className="min-h-screen snap-start lg:snap-center">
+					<div className="screen">
 						<WebDev />
 					</div>
-					<div className="min-h-screen snap-start lg:snap-center">
+					<div className="screen">
 						<Offer />
 					</div>
-					<div className="snap-start lg:snap-center">
+					<div>
 						<Footer />
 					</div>
 				</div>
