@@ -1,13 +1,13 @@
-import { AnimatePresence, motion } from "framer-motion";
+import { AnimatePresence, easeOut, motion } from "framer-motion";
 
 export default function AccordionItem({ title, content, isOpen, onClick }) {
 	return (
 		<div className="text-white">
 			<div
-				className="p-5 cursor-pointer bg-secondary flex justify-between items-center"
+				className="p-3 sm:p-5 cursor-pointer bg-secondary flex justify-between items-center"
 				onClick={onClick}
 			>
-				<h2 className="mb-0 text-2xl">{title}</h2>
+				<h2 className="mb-0 text-xl sm:text-2xl">{title}</h2>
 				<div className="text-primary">
 					<AnimatePresence mode="wait">
 						{isOpen ? (
@@ -16,7 +16,7 @@ export default function AccordionItem({ title, content, isOpen, onClick }) {
 								initial={{ opacity: 0 }}
 								animate={{ opacity: 1 }}
 								exit={{ opacity: 0 }}
-								transition={{ duration: 0.3 }}
+								transition={{ duration: 0.5 }}
 								xmlns="http://www.w3.org/2000/svg"
 								viewBox="0 0 24 24"
 								fill="currentColor"
@@ -34,7 +34,7 @@ export default function AccordionItem({ title, content, isOpen, onClick }) {
 								initial={{ opacity: 0 }}
 								animate={{ opacity: 1 }}
 								exit={{ opacity: 0 }}
-								transition={{ duration: 0.3 }}
+								transition={{ duration: 0.5 }}
 								xmlns="http://www.w3.org/2000/svg"
 								viewBox="0 0 24 24"
 								fill="currentColor"
@@ -53,10 +53,10 @@ export default function AccordionItem({ title, content, isOpen, onClick }) {
 			<motion.div
 				initial={{ height: 0 }}
 				animate={{ height: isOpen ? "auto" : 0 }}
-				transition={{ duration: 0.3 }}
+				transition={{ ease: easeOut, duration: 0.5 }}
 				className="overflow-hidden"
 			>
-				<div className="p-4 bg-secondary text-gray-300 text-lg">{content}</div>
+				<div className="px-4 pb-4 bg-secondary text-gray-300 text-lg">{content}</div>
 			</motion.div>
 		</div>
 	);

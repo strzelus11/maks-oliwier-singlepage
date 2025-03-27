@@ -32,7 +32,7 @@ export default function Home() {
 				/>
 				<meta property="og:url" content="https://insighthunters.pl/" />
 			</Head>
-			<div className="flex flex-col overflow-y-scroll full mt-[70px] lg:mt-[80px]">
+			<div className="flex flex-col full mt-[70px] lg:mt-[80px]">
 				<div>
 					<div className="screen">
 						<Hero />

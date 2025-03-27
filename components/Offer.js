@@ -8,7 +8,7 @@ export default function Offer() {
 				title="Oferta"
 				subtitle="Wszystkie zajęcia online"
 			>
-				<div className="flex flex-col lg:grid grid-cols-4 gap-10 w-[80%] lg:w-full">
+				<div className="flex flex-col lg:grid grid-cols-4 gap-5 sm:gap-10 w-[80%] lg:w-full mb-10 sm:mb-0">
 					<OfferCard
 						title="Korepetycje z fizyki"
 						subtitle="(poziom liceum i studiów)"

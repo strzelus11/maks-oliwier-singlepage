@@ -9,7 +9,6 @@ body {
 	height: 100%;
 	box-sizing: border-box;
 	scroll-behavior: smooth;
-	overflow: hidden;
 	scroll-padding-top: 80px;
 }
 
