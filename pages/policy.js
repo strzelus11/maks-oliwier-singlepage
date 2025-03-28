@@ -6,25 +6,6 @@ export default function PolicyPage() {
 		<>
 			<Head>
 				<title>Insight Hunters | Polityka prywatności</title>
-				<meta
-					name="description"
-					content="Zajęcia indywidualne z fizyki, matematyki i programowania. Przygotowanie do matury, olimpiad i rozwój pasji. Online i stacjonarnie."
-				/>
-				<link rel="icon" href="/file.png" type="image/png" />
-				<meta name="robots" content="index, follow" />
-				<meta
-					name="keywords"
-					content="korepetycje, fizyka, matematyka, programowanie, nauka, tutoring, szkolenia"
-				/>
-				<meta
-					property="og:title"
-					content="Insight Hunters – Korepetycje i Szkolenia"
-				/>
-				<meta
-					property="og:description"
-					content="Profesjonalne korepetycje z fizyki, matematyki i programowania. Online lub stacjonarnie."
-				/>
-				<meta property="og:url" content="https://insighthunters.pl/" />
 			</Head>
 			<div className="flex flex-col min-h-[100vh] pt-[70px] lg:pt-[80px]">
 				<h1 className="text-3xl text-white text-center font-semibold my-5">

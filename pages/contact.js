@@ -72,25 +72,6 @@ export default function ContactPage() {
 		<>
 			<Head>
 				<title>Insight Hunters | Kontakt</title>
-				<meta
-					name="description"
-					content="Zajęcia indywidualne z fizyki, matematyki i programowania. Przygotowanie do matury, olimpiad i rozwój pasji. Online i stacjonarnie."
-				/>
-				<link rel="icon" href="/file.png" type="image/png" />
-				<meta name="robots" content="index, follow" />
-				<meta
-					name="keywords"
-					content="korepetycje, fizyka, matematyka, programowanie, nauka, tutoring, szkolenia"
-				/>
-				<meta
-					property="og:title"
-					content="Insight Hunters – Korepetycje i Szkolenia"
-				/>
-				<meta
-					property="og:description"
-					content="Profesjonalne korepetycje z fizyki, matematyki i programowania. Online lub stacjonarnie."
-				/>
-				<meta property="og:url" content="https://insighthunters.pl/" />
 			</Head>
 			<div className="flex flex-col h-screen">
 				<div className="mt-[70px] lg:mt-[80px] flex flex-col justify-center items-center h-full p-5">
