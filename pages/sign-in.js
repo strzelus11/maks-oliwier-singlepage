@@ -118,17 +118,18 @@ export default function SignInPage() {
 							value={courseName}
 							onChange={(e) => setCourseName(e.target.value)}
 						>
-							<option value="Korepetycje z fizyki">
+							<option value="Fizyka">
 								Korepetycje z fizyki (poziom liceum i studiów)
 							</option>
-							<option value="Korepetycje z matematyki">
+							<option value="Matematyka">
 								Korepetycje z matematyki (poziom liceum i studiów)
+							</option>
+							<option value="Data Science">Korepetycje z data science</option>
+							<option value="Web Development">
+								Korepetycje z web development
 							</option>
 							<option value="Koło olimpijskie z fizyki">
 								Koło olimpijskie z fizyki
-							</option>
-							<option value="Korepetycje z programowania">
-								Korepetycje z programowania
 							</option>
 						</select>
 						<div className="flex justify-between">

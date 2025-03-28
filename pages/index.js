@@ -11,10 +11,10 @@ export default function Home() {
 	return (
 		<>
 			<Head>
-				<title>Insight Hunters – Profesjonalne korepetycje</title>
+				<title>Insight Hunters</title>
 				<meta
 					name="description"
-					content="Dołącz do Insight Hunters, aby uzyskać profesjonalne korepetycje z przedmiotów ścisłych. Sesje online i stacjonarne z fizyki, matematyki i programowania. Podnieś swoje wyniki już dziś!"
+					content="Dołącz do Insight Hunters, aby uzyskać profesjonalne korepetycje z przedmiotów ścisłych. Sesje online z fizyki, matematyki i programowania. Podnieś swoje wyniki już dziś!"
 				/>
 				<meta name="robots" content="index, follow" />
 				<link rel="canonical" href="https://insighthunters.pl/" />
@@ -26,7 +26,7 @@ export default function Home() {
 				/>
 				<meta
 					property="og:description"
-					content="Dołącz do Insight Hunters, aby uzyskać profesjonalne korepetycje z przedmiotów ścisłych. Sesje online i stacjonarne z fizyki, matematyki i programowania."
+					content="Dołącz do Insight Hunters, aby uzyskać profesjonalne korepetycje z przedmiotów ścisłych. Sesje online z fizyki, matematyki i programowania."
 				/>
 				<meta
 					property="og:image"
@@ -42,7 +42,7 @@ export default function Home() {
 				/>
 				<meta
 					name="twitter:description"
-					content="Dołącz do Insight Hunters, aby uzyskać profesjonalne korepetycje z przedmiotów ścisłych. Sesje online i stacjonarne z fizyki, matematyki i programowania."
+					content="Dołącz do Insight Hunters, aby uzyskać profesjonalne korepetycje z przedmiotów ścisłych. Sesje online z fizyki, matematyki i programowania."
 				/>
 				<meta
 					name="twitter:image"

@@ -8,9 +8,9 @@ export default function Offer() {
 				title="Oferta"
 				subtitle="Wszystkie zajęcia online"
 			>
-				<div className="flex flex-col lg:grid grid-cols-4 gap-5 sm:gap-10 w-[80%] lg:w-full mb-10 sm:mb-0">
+				<div className="flex flex-col lg:grid grid-cols-5 gap-5 w-[80%] lg:w-full mb-10 sm:mb-0">
 					<OfferCard
-						title="Korepetycje z fizyki"
+						title="Fizyka"
 						subtitle="(poziom liceum i studiów)"
 						price={100}
 						time="h"
@@ -18,7 +18,7 @@ export default function Offer() {
 						index={0}
 					/>
 					<OfferCard
-						title="Korepetycje z matematyki"
+						title="Matematyka"
 						subtitle="(poziom liceum i studiów)"
 						price={100}
 						time="h"
@@ -26,18 +26,25 @@ export default function Offer() {
 						index={1}
 					/>
 					<OfferCard
+						title="Data Science"
+						price={100}
+						time="h"
+						group={false}
+						index={2}
+					/>
+					<OfferCard
+						title="Web Development"
+						price={120}
+						time="h"
+						group={false}
+						index={3}
+					/>
+					<OfferCard
 						title="Koło olimpijskie z fizyki"
 						price={50}
 						time="zajęcia"
 						group={true}
-						index={2}
-					/>
-					<OfferCard
-						title="Korepetycje z programowania"
-						price={100}
-						time="h"
-						group={false}
-						index={3}
+						index={4}
 					/>
 				</div>
 			</SectionLayout>

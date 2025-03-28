@@ -17,7 +17,7 @@ const oliwierAchiev = [
 	"3. rok studiów (2023/2024) – obroniony licencjat na temat zastosowania metody wariacyjnej do kwantowych układów wielu ciał",
 ];
 
-const links = [
+const oliwierLinks = [
 	{
 		url: "http://youtube.com/watch?v=PyaIPvBkmwE&ab_channel=InternationalWindsurfingAssociation",
 		text: "Formuła Windsurfing Foil",
@@ -32,24 +32,49 @@ const links = [
 	},
 ];
 
+const kubaLinks = [
+	{
+		url: "https://www.insighthunters.pl/",
+		text: "Strona firmy Insight Hunters",
+	},
+	{
+		url: "https://olesinskiego.com/",
+		text: "Strona portfolio Jakub Olesiński",
+	},
+	{
+		url: "https://sqm-audits.vercel.app/",
+		text: "Strona SQM",
+	},
+	{
+		url: "https://www.linkedin.com/in/jakub-strzelecki-8bb794276/",
+		text: "Profil LinkedIn",
+	},
+];
+
 export default function AboutComponent() {
 	return (
 		<div className="p-3 sm:p-10 flex justify-center">
-            <div className="flex flex-col gap-10 max-w-4xl">
-                <PersonComponent
-                    name="Oliwier Urbański"
-                    image="/oliwier.png"
-                    text="Fizyka jest moją największą pasją. Interesuję się fizyką statystyczną, kwantowymi układami wielu ciał oraz fizyką żeglarstwa. W wolnych chwilach trenuję na klasie Formuła Windsurfing Foil."
-                    links={links}
-                    achievements={oliwierAchiev}
-                />
-                <PersonComponent
-                    name="Maksymilian Strzelecki"
-                    image="/maks.png"
-                    text="Fizyka i matematyka zawsze były dla mnie bardzo ciekawymi naukami. Wiele czasu spędziłem rozwiązując problemy z zakresu różnych dyscyplin tych dziedzin. Dodatkowo połączyłem tę wiedzę i doświadczenie z moją inną pasją, jaką jest programowanie, poprzez tworzenie symulacji komputerowych, analizując dane oraz tworząc technologie AI wykorzystując sieci neuronowe. Obecnie studiuję informatykę na Politechnice Poznańskiej, gdzie kontynuuje swoją naukową przygodę."
-                    achievements={maksAchiev}
-                />
-            </div>
-        </div>
+			<div className="flex flex-col gap-10 max-w-4xl">
+				<PersonComponent
+					name="Oliwier Urbański"
+					image="/oliwier.png"
+					text="Fizyka jest moją największą pasją. Interesuję się fizyką statystyczną, kwantowymi układami wielu ciał oraz fizyką żeglarstwa. W wolnych chwilach trenuję na klasie Formuła Windsurfing Foil."
+					links={oliwierLinks}
+					achievements={oliwierAchiev}
+				/>
+				<PersonComponent
+					name="Maksymilian Strzelecki"
+					image="/maks.png"
+					text="Fizyka i matematyka zawsze były dla mnie bardzo ciekawymi naukami. Wiele czasu spędziłem rozwiązując problemy z zakresu różnych dyscyplin tych dziedzin. Dodatkowo połączyłem tę wiedzę i doświadczenie z moją inną pasją, jaką jest programowanie, poprzez tworzenie symulacji komputerowych, analizując dane oraz tworząc technologie AI wykorzystując sieci neuronowe. Obecnie studiuję informatykę na Politechnice Poznańskiej, gdzie kontynuuje swoją naukową przygodę."
+					achievements={maksAchiev}
+				/>
+				<PersonComponent
+					name="Jakub Strzelecki"
+					image="/kuba.png"
+					text="Jestem full stack developerem z doświadczeniem w projektowaniu i tworzeniu nowoczesnych aplikacji webowych, a także IT Managerem w firmie Woodpecker Europe. Na co dzień odpowiadam za rozwój rozwiązań wspierających procesy sprzedażowe i logistyczne w branży maszyn leśnych. Łączę kompetencje techniczne z umiejętnościami organizacyjnymi, koordynując wdrażanie narzędzi IT, automatyzację procesów oraz optymalizację infrastruktury cyfrowej w firmie. Stale rozwijam się w obszarze architektury systemów, zarządzania projektami IT oraz najnowszych trendów web developmentu. Interesuje mnie zarówno jakość kodu, jak i realna wartość biznesowa rozwiązań, które tworzę."
+					links={kubaLinks}
+				/>
+			</div>
+		</div>
 	);
 }

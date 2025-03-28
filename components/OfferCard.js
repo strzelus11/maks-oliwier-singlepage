@@ -24,17 +24,17 @@ export default function OfferCard({
 			variants={fadeIn("down", "spring", 0.1 * index, 1)}
 			initial="hidden"
 			animate="show"
-			className="box flex flex-col items-center justify-between shadow-2xl transition-all delay-100 duration-300 lg:h-[25rem] border-2 border-primary"
+			className="box flex flex-col items-center justify-between shadow-2xl transition-all delay-100 duration-300 lg:h-[20rem] border-2 border-primary"
 		>
 			<div className="lg:h-20">
 				<h2 className="text-center text-2xl font-semibold">{title}</h2>
-				<h3 className="text-gray-500 text-center mt-2">{subtitle}</h3>
+				<h3 className="text-gray-500 text-center">{subtitle}</h3>
 			</div>
 			<div className="my-5 lg:my-0">
 				<span className="text-5xl font-semibold">{price}</span>zł/{time}
 			</div>
 			<div className="flex flex-col items-center w-full">
-				<div className="mt-3 bg-black border-2 p-3 rounded-full flex gap-3">
+				<div className="mt-3 bg-black border-2 p-2 rounded-full flex gap-3">
 					{group ? (
 						<>
 							<svg
@@ -72,7 +72,7 @@ export default function OfferCard({
 				</div>
 				<button
 					onClick={handleEnroll}
-					className="btn-primary flex justify-center w-[70%] mt-5"
+					className="btn-primary flex justify-center w-[80%] mt-5"
 				>
 					Zapisz się!
 				</button>
