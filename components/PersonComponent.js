@@ -1,6 +1,7 @@
 import Link from "next/link";
 import SVG from "./SVG";
 import React from "react";
+import Image from "next/image";
 
 export default function PersonComponent({
 	name,
@@ -17,6 +18,14 @@ export default function PersonComponent({
 						className="rounded-lg object-cover w-full h-full"
 						src={image}
 						alt=""
+					/>
+					<Image
+						src={image}
+						alt="person"
+						width={500}
+						height={0}
+						className="rounded-lg object-cover h-full w-full"
+						loading="lazy"
 					/>
 				</div>
 				<div>

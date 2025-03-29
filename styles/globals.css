@@ -73,7 +73,7 @@ img {
 	.bg-image::before {
 		background-size: cover;
 		background-position: center;
-		background-image: url("../public/hero.png");
+		background-image: url("../public/images/hero.jpg");
 		content: "";
 		position: absolute;
 		border-radius: 10px;

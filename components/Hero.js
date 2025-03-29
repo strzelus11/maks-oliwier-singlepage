@@ -1,11 +1,15 @@
 import { fadeIn } from "@/utils/motion";
 import { motion } from "framer-motion";
+import Image from "next/image";
 import { FaQuoteLeft } from "react-icons/fa";
 import { FaQuoteRight } from "react-icons/fa";
 
 export default function Hero() {
 	return (
-		<div id="Hero" className="p-3 lg:py-0 bg-black text-white flex justify-center full">
+		<div
+			id="Hero"
+			className="p-3 lg:py-0 bg-black text-white flex justify-center full"
+		>
 			<div className="grid lg:grid-cols-2 xl:grid-cols-3 gap-[40px] items-center xl:items-start">
 				<motion.div
 					variants={fadeIn("right", "spring", 0.3, 1)}
@@ -18,8 +22,9 @@ export default function Hero() {
 							<FaQuoteLeft className="size-10" />
 						</div>
 						<p className="text-4xl xl:text-5xl xl:leading-[2.9rem] font-semibold m-5">
-							All of <span className="text-primary">physics</span> is either impossible or trivial. It is impossible
-							until you understand it, and then it becomes trivial.
+							All of <span className="text-primary">physics</span> is either
+							impossible or trivial. It is impossible until you understand it,
+							and then it becomes trivial.
 						</p>
 						<div className="flex justify-between my-5">
 							<p className="text-right italic text-lg text-gray-400">
@@ -43,11 +48,16 @@ export default function Hero() {
 					whileInView="show"
 					className="xl:col-span-2 h-full hidden lg:flex items-center justify-center"
 				>
-					<img
-						className="rounded-xl border-2 border-secondary"
-						src="/hero.png"
-						alt=""
-					/>
+					<div className="py-5 h-full w-full">
+                        <Image
+                            src="/images/hero.jpg"
+                            alt="hero"
+                            width={500}
+                            height={0}
+                            className="rounded-xl object-cover border-2 w-full h-full border-secondary"
+                            loading="lazy"
+                        />
+                    </div>
 				</motion.div>
 			</div>
 		</div>
