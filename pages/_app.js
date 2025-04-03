@@ -52,8 +52,10 @@ function App({ Component, pageProps }) {
 				/>
 
 				<meta name="author" content="Insight Hunters" />
-				<link rel="icon" href="/images/file.png" type="image/png" />
-				<link rel="apple-touch-icon" href="/images/file.png" />
+				<link rel="icon" href="/file.png" type="image/png" />
+				<link rel="apple-touch-icon" href="/file.png" />
+				{/* <link rel="icon" href="/logo.png" type="image/png" />
+				<link rel="apple-touch-icon" href="/logo.png" /> */}
 			</Head>
 			<Toaster
 				position="top-center"
