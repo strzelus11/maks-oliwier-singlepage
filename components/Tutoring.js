@@ -69,20 +69,13 @@ export default function Tutoring() {
 							<div className="text-gray-300 flex gap-3 items-start">
 								<SVG className="size-7 text-primary" />
 								<div className="w-full">
-									Równania, przekształcenia i wzory zapisujemy na żywo w
-									systemie opartym na technologii LaTeX, dzięki czemu są one
-									czytelne i eleganckie. Umożliwia to błyskawiczne eksportowanie
-									notatki z zajęć do pliku pdf, który otrzymasz.
+									<strong>Równania i wzory w LaTeX</strong> – wszystkie równania, przekształcenia i wzory zapisujemy na żywo w systemie LaTeX, dzięki czemu są czytelne, eleganckie i gotowe do natychmiastowego eksportu do pliku PDF.
 								</div>
 							</div>
 							<div className="text-gray-300 flex gap-3 items-start">
 								<SVG className="size-7 text-primary" />
 								<div className="w-full">
-									Zrozumienie wielu zjawisk fizycznych jest łatwiejsze, gdy się
-									je zobaczy. Podczas korepetycji używamy profesjonalnych
-									symulacji fizycznych (naszego autorstwa lub klasyków z
-									Internetu). Programy te są często interaktywne i wyrabiają
-									naturalną intuicję fizyczną.
+									Interaktywne symulacje fizyczne – nasze lub sprawdzone symulacje z Internetu pomagają zrozumieć trudne zjawiska fizyczne i rozwijają intuicję.
 								</div>
 							</div>
 							<div className="text-gray-300 flex gap-3 items-start">
