@@ -17,7 +17,7 @@ function App({ Component, pageProps }) {
   useEffect(() => {
     const handleRouteChange = (url) => {
       if (window.gtag) {
-        window.gtag("config", "G-XXXXXXXXXX", { page_path: url });
+        window.gtag("config", "G-NF3QBCM17D", { page_path: url });
       }
     };
     router.events.on("routeChangeComplete", handleRouteChange);
@@ -33,7 +33,7 @@ function App({ Component, pageProps }) {
         <title>Insight Hunters</title>
 
         {/* Google Analytics */}
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-NF3QBCM17D"></script>
         <script
           dangerouslySetInnerHTML={{
             __html: `
