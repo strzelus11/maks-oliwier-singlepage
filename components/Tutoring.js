@@ -8,7 +8,7 @@ import { useTranslation } from "react-i18next";
 
 export default function Tutoring() {
 	const { t } = useTranslation();
-	const [advanced, setAdvanced] = useState(true);
+	const [advanced, setAdvanced] = useState(false);
 	return (
 		<SectionLayout id="link1" title="O korepetycjach">
 			<div className="text-lg bg-secondary sm:px-10 p-5 rounded-xl leading-6 relative flex justify-center min-h-[30rem] max-w-5xl mt-5 sm:mt-0">
