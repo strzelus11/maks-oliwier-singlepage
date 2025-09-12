@@ -4,7 +4,22 @@ import SectionLayout from "./SectionLayout";
 const maksAchiev = [
 	"Półfinalista Ogólnopolskiej Olimpiady Fizycznej 2022/2023 (etap doświadczalny)",
 	"Półfinalista Ogólnopolskiej Olimpiady Fizycznej 2023/2024 (etap teoretyczny)",
+	"Prolog Programming Certificate 2025",
+	"Harvard Introduction to artificial intelligence with Python (free mode)",
 ];
+
+const maksLinks = [
+	{
+		url: "https://www.fizyka.amu.edu.pl/aktualnosci/olimpiada-fizyczna/komunikat-nr-3-72.-olimpiada-fizyczna",
+		text: "Kwalifikacja do drugiej części półfinału,
+	},
+	{
+		url: "https://www.fizyka.amu.edu.pl/aktualnosci/olimpiada-fizyczna/komunikat-nr-4-72.-of",
+		text: "Zdjęcia z półfinału",
+	},
+];
+
+
 
 const oliwierAchiev = [
 	"1. klasa gimnazjum (2016/2017) – laureat wojewódzkiego konkursu z matematyki, finalista wojewódzkiego konkursu z fizyki",
@@ -56,17 +71,17 @@ export default function AboutComponent() {
 		<div className="p-3 sm:p-10 flex justify-center">
 			<div className="flex flex-col gap-10 max-w-4xl">
 				<PersonComponent
+					name="Maksymilian Strzelecki"
+					image="/images/maks.jpg"
+					text="Fizyka i matematyka zawsze były dla mnie bardzo ciekawymi naukami. Wiele czasu spędziłem rozwiązując problemy z zakresu różnych dyscyplin tych dziedzin. Dodatkowo połączyłem tę wiedzę i doświadczenie z moją inną pasją, jaką jest programowanie, poprzez tworzenie symulacji komputerowych, analizując dane oraz tworząc technologie AI wykorzystując sieci neuronowe. Obecnie studiuję informatykę na Politechnice Poznańskiej, gdzie kontynuuje swoją naukową przygodę."
+					achievements={maksAchiev}
+				/>
+				<PersonComponent
 					name="Oliwier Urbański"
 					image="/images/oliwier.jpg"
 					text="Fizyka jest moją największą pasją. Interesuję się fizyką statystyczną, kwantowymi układami wielu ciał oraz fizyką żeglarstwa. W wolnych chwilach trenuję na klasie Formuła Windsurfing Foil."
 					links={oliwierLinks}
 					achievements={oliwierAchiev}
-				/>
-				<PersonComponent
-					name="Maksymilian Strzelecki"
-					image="/images/maks.jpg"
-					text="Fizyka i matematyka zawsze były dla mnie bardzo ciekawymi naukami. Wiele czasu spędziłem rozwiązując problemy z zakresu różnych dyscyplin tych dziedzin. Dodatkowo połączyłem tę wiedzę i doświadczenie z moją inną pasją, jaką jest programowanie, poprzez tworzenie symulacji komputerowych, analizując dane oraz tworząc technologie AI wykorzystując sieci neuronowe. Obecnie studiuję informatykę na Politechnice Poznańskiej, gdzie kontynuuje swoją naukową przygodę."
-					achievements={maksAchiev}
 				/>
 				<PersonComponent
 					name="Jakub Strzelecki"
