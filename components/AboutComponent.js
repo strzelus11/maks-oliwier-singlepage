@@ -11,7 +11,7 @@ const maksAchiev = [
 const maksLinks = [
 	{
 		url: "https://www.fizyka.amu.edu.pl/aktualnosci/olimpiada-fizyczna/komunikat-nr-3-72.-olimpiada-fizyczna",
-		text: "Kwalifikacja do drugiej części półfinału,
+		text: "Kwalifikacja do drugiej części półfinału",
 	},
 	{
 		url: "https://www.fizyka.amu.edu.pl/aktualnosci/olimpiada-fizyczna/komunikat-nr-4-72.-of",
