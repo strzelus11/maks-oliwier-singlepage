@@ -70,14 +70,14 @@ export default function Tutoring() {
 								<SVG className="size-7 text-primary" />
 								<div className="w-full">
 									<strong>Równania i wzory w LaTeX</strong> – wszystkie równania, przekształcenia i wzory zapisujemy na żywo w systemie LaTeX, dzięki czemu są czytelne, eleganckie i gotowe do natychmiastowego eksportu do pliku PDF.<br/>
-									<a className="text-primary", href="https://youtu.be/Lx7aadHBYs4">Tu znajdziesz video jak to u nasz działa</a>
+									<a className="text-primary" href="https://youtu.be/Lx7aadHBYs4">Tu znajdziesz video jak to u nas działa</a>
 								</div>
 							</div>
 							<div className="text-gray-300 flex gap-3 items-start">
 								<SVG className="size-7 text-primary" />
 								<div className="w-full">
 									<strong>Interaktywne symulacje fizyczne</strong> – nasze lub sprawdzone symulacje z Internetu pomagają zrozumieć trudne zjawiska fizyczne i rozwijają intuicję.<br/>
-									<a className="text-primary", href="https://youtu.be/LTyorAPp9Ps">A tu pokazujemy Ci przykładowe symulacje</a>
+									<a className="text-primary" href="https://youtu.be/LTyorAPp9Ps">A tu pokazujemy Ci przykładowe symulacje</a>
 								</div>
 							</div>
 							<div className="text-gray-300 flex gap-3 items-start">
