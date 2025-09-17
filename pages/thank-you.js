@@ -1,4 +1,6 @@
 import Head from "next/head";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
 export default function ThankYou() {
   return (
@@ -6,9 +8,18 @@ export default function ThankYou() {
       <Head>
         <title>Dziękujemy | Insight Hunters</title>
       </Head>
-      <div className="flex flex-col items-center justify-center mt-20">
-        <h1 className="text-3xl font-bold mb-4">Dziękujemy za zapisanie się!</h1>
-        <p>Skontaktujemy się z Tobą wkrótce.</p>
+      <div className="flex flex-col h-screen">
+        {/* Header */}
+        <Header />
+
+        {/* Content */}
+        <div className="flex flex-col items-center justify-center flex-grow text-center p-6">
+          <h1 className="text-3xl font-bold mb-4">Dziękujemy za zapisanie się!</h1>
+          <p className="text-lg text-gray-600">Skontaktujemy się z Tobą wkrótce.</p>
+        </div>
+
+        {/* Footer */}
+        <Footer />
       </div>
     </>
   );
