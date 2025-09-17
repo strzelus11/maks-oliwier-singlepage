@@ -14,8 +14,12 @@ export default function ThankYou() {
 
         {/* Content */}
         <div className="flex flex-col items-center justify-center flex-grow text-center p-6">
-          <h1 className="text-3xl font-bold mb-4">Dziękujemy za zapisanie się!</h1>
-          <p className="text-lg text-gray-600">Skontaktujemy się z Tobą wkrótce.</p>
+          <h1 className="text-3xl font-bold mb-4 text-white">
+            Dziękujemy za zapisanie się!
+          </h1>
+          <p className="text-lg text-gray-300">
+            Skontaktujemy się z Tobą wkrótce.
+          </p>
         </div>
 
         {/* Footer */}
