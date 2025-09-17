@@ -7,13 +7,15 @@ import Footer from "@/components/Footer";
 import SendButton from "@/components/SendButton";
 import Head from "next/head";
 import ErrorMessage from "@/components/ErrorMessage";
+import { useRouter } from "next/router"; // <--- importujemy hook useRouter
 
 export default function ContactPage() {
 	const [name, setName] = useState("");
-    const [email, setEmail] = useState("");
-    const [emailError, setEmailError] = useState(null);
+	const [email, setEmail] = useState("");
+	const [emailError, setEmailError] = useState(null);
 	const [message, setMessage] = useState("");
 	const [loading, setLoading] = useState(false);
+	const router = useRouter(); // <--- inicjalizacja routera
 
 	useEffect(() => {
 		const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -63,6 +65,9 @@ export default function ContactPage() {
 				.finally(() => {
 					setLoading(false);
 				});
+
+			// <--- po udanym wysłaniu przekierowujemy na /thank-you
+			router.push("/thank-you");
 		} else {
 			toast.error("Uzupełnij wszystkie pola.");
 		}
