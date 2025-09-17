@@ -1,12 +1,15 @@
-import React from "react";
+import Head from "next/head";
 
-const ThankYou = () => {
+export default function ThankYou() {
   return (
-    <div style={{ textAlign: "center", marginTop: "50px" }}>
-      <h1>Dziękujemy za zapisanie się!</h1>
-      <p>Skontaktujemy się z Tobą wkrótce.</p>
-    </div>
+    <>
+      <Head>
+        <title>Dziękujemy | Insight Hunters</title>
+      </Head>
+      <div className="flex flex-col items-center justify-center mt-20">
+        <h1 className="text-3xl font-bold mb-4">Dziękujemy za zapisanie się!</h1>
+        <p>Skontaktujemy się z Tobą wkrótce.</p>
+      </div>
+    </>
   );
-};
-
-export default ThankYou;
+}
