@@ -24,6 +24,17 @@ export default function Home() {
 					<div className="screen">
 						<Olimpic />
 					</div>
+					<div className="screen flex justify-center items-center">
+					  <iframe
+					    width="560"
+					    height="315"
+					    src="https://www.youtube.com/watch?v=TKeGlIpBehQ"
+					    title="Reklama koła olimpijskiego"
+					    frameBorder="0"
+					    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+					    allowFullScreen
+					  ></iframe>
+					</div>
 					<div className="screen">
 						<Coding />
 					</div>
