@@ -1,18 +1,19 @@
 import Head from "next/head";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import Choose from "@/components/Choose";
 
-export default function ContactPage() {
+export default function ThankYou() {
   return (
     <>
-
-      <div className="flex flex-col min-h-screen bg-gray-900">
+      <Head>
+        <title>Zapisz się | Insight Hunters</title>
+      </Head>
+      <div className="flex flex-col h-screen">
         {/* Header */}
         <Header />
 
-        {/* Główna treść */}
-        <div className="screen">
+        {/* Content */}
+        <div className="flex flex-col items-center justify-center flex-grow text-center p-6">
           <Choose />
         </div>
 
@@ -22,4 +23,3 @@ export default function ContactPage() {
     </>
   );
 }
-
