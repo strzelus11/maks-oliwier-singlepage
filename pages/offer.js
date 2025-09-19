@@ -21,7 +21,7 @@ function OfferCard({ title, subtitle, price, time, group }) {
     >
       <div className="lg:h-20">
         <h2 className="text-center text-2xl font-semibold">{title}</h2>
-        <h3 className="text-gray-500 text-center">{subtitle}</h3>
+        {subtitle && <h3 className="text-gray-500 text-center">{subtitle}</h3>}
       </div>
       <div className="my-5 lg:my-0">
         <span className="text-5xl font-semibold">{price}</span>zł/{time}
@@ -76,13 +76,17 @@ function OfferCard({ title, subtitle, price, time, group }) {
 
 function Offer() {
   return (
-    <SectionLayout id="link5" title="Wybierz usługę">
+    <SectionLayout
+      id="link5"
+      title="Wybierz usługę"
+      className="pt-24 sm:pt-32 lg:pt-36" // <-- padding-top dla tytułu
+    >
       <div className="flex flex-col lg:grid grid-cols-5 gap-5 w-[80%] lg:w-full mb-10 sm:mb-0">
         <OfferCard title="Fizyka" subtitle="(poziom liceum i studiów)" price={100} time="h" group={false} />
+        <OfferCard title="Koło olimpijskie z fizyki" price={50} time="zajęcia" group={true} />
         <OfferCard title="Matematyka" subtitle="(poziom liceum i studiów)" price={100} time="h" group={false} />
         <OfferCard title="Data Science" price={100} time="h" group={false} />
         <OfferCard title="Web Development" price={120} time="h" group={false} />
-        <OfferCard title="Koło olimpijskie z fizyki" price={50} time="zajęcia" group={true} />
       </div>
     </SectionLayout>
   );
@@ -109,4 +113,3 @@ export default function ThankYou() {
     </>
   );
 }
-
