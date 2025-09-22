@@ -56,7 +56,7 @@ export default function Hero() {
 
           {/* Mobile overlay: przycisk na dole obrazka */}
           {isMobile && (
-            <div className="absolute bottom-0 left-0 w-full h-24">
+            <div className="absolute bottom-0 left-0 w-full h-24 lg:hidden flex">
               <div className="absolute bottom-0 left-0 w-full h-full bg-black/80 rounded-b-xl"></div>
               <div className="absolute bottom-6 left-1/2 -translate-x-1/2">
                 <ContactButton className="scale-[1]" />

@@ -22,9 +22,6 @@ export default function Home() {
 						<Tutoring />
 					</div>
 					<div className="screen">
-						<Olimpic />
-					</div>
-					<div className="screen">
 						<Coding />
 					</div>
 					<div className="screen">
