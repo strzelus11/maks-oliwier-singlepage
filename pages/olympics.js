@@ -50,16 +50,15 @@ export default function Home() {
         </div>
 
         {/* --- Video --- */}
-        <div className="mb-16">
-          <VideoEmbed
-            videoId="TKeGlIpBehQ"
-            width="800px"
-            height="450px"
-            borderColor="#d0a933"
-            borderWidth="6px"
-            padding="20px"
-          />
-        </div>
+        <div className="mb-16 w-full flex justify-center">
+        <VideoEmbed
+          videoId="TKeGlIpBehQ"
+          maxWidth="1000px"   // to ustali maksymalną szerokość
+          borderColor="#d0a933"
+          borderWidth="6px"
+          padding="10px"
+        />
+      </div>
 
         {/* --- Olimpic section --- */}
         <div className="mb-16 w-full px-4 max-w-[1200px]">
@@ -80,7 +79,7 @@ export default function Home() {
           <PersonComponent
             name="Oliwier Urbański"
             image="/images/oliwier.jpg"
-            text="Fizyka jest moją największą pasją..."
+            text="Fizyka jest moją największą pasją. Interesuję się fizyką statystyczną, kwantowymi układami wielu ciał oraz fizyką żeglarstwa. W wolnych chwilach trenuję na klasie Formuła Windsurfing Foil."
             achievements={oliwierAchiev}
             links={oliwierLinks}
           />

@@ -16,7 +16,7 @@ const Header = () => {
   );
 
   const { t } = useTranslation();
-  const links = ["link1", "link2", "link3", "link4", "link5"];
+  const links = ["link1", "link2", "link3", "link5"];
 
   const [navOpen, setNavOpen] = useState(false);
 
@@ -75,7 +75,7 @@ const Header = () => {
               {t(link)}
             </div>
           ))}
-		  <Link className={inactiveLink} href={"/olimpic"}>
+		  <Link className={inactiveLink} href={"/olympics"}>
             Koło Olimpijskie
           </Link>
           <Link className={inactiveLink} href={"/about"}>
@@ -155,16 +155,16 @@ const Header = () => {
                   <Link
                     onClick={() => setNavOpen(false)}
                     className={inactiveLink}
-                    href={"/about"}
+                    href={"/olympics"}
                   >
-                    O nas
+                    Koło Olimpijskie
                   </Link>
                   <Link
                     onClick={() => setNavOpen(false)}
                     className={inactiveLink}
-                    href={"/olympic-club"}
+                    href={"/about"}
                   >
-                    Koło Olimpijskie
+                    O nas
                   </Link>
                   <div onClick={() => setNavOpen(false)}>
                     <ContactButton />
