@@ -117,7 +117,7 @@ export default function ContactPage() {
 						<label>Wiadomość</label>
 						<textarea
 							className="max-h-[12rem]"
-							placeholder="Opisz problem, który chciałbyś z nami przedyskutować na zajęciach."
+							placeholder="Opisz problem, który chciałbyś z nami przedyskutować."
 							onChange={(e) => setMessage(e.target.value)}
 						></textarea>
 						<SendButton onClick={sendEmail} disabled={loading} />

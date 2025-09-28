@@ -9,9 +9,8 @@ export default function Hero() {
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
-    // Funkcja sprawdzająca szerokość ekranu
     const handleResize = () => setIsMobile(window.innerWidth < 1024);
-    handleResize(); // ustawienie początkowe
+    handleResize();
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
   }, []);
@@ -28,7 +27,8 @@ export default function Hero() {
           variants={fadeIn("right", "spring", 0.3, 1)}
           initial="hidden"
           whileInView="show"
-          className="flex flex-col justify-between gap-10 items-center h-full z-[2] rounded-xl p-5 relative bg-image xl:mt-5"
+          className="flex flex-col justify-between gap-10 items-center h-full z-[2] rounded-xl p-5 relative bg-image xl:mt-5
+                     pb-24 lg:pb-0" // <-- padding dolny tylko na mobilkach
         >
           <div className="isolate">
             <div className="mb-5">
