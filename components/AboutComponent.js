@@ -6,6 +6,10 @@ const maksAchiev = [
 	"Półfinalista Ogólnopolskiej Olimpiady Fizycznej 2023/2024 (etap teoretyczny)",
 	"Prolog Programming Certificate 2025",
 	"Harvard Introduction to artificial intelligence with Python (free mode)",
+	"Google Search Ads Certificate",
+	"Google Analytics Certificate",
+	"Praca jako representant developera w firmie Cordia 2024",
+	"Praca jako nauczyciel w firmie edukacyjnej Ferajna 2024"
 ];
 
 const maksLinks = [
