@@ -8,7 +8,7 @@ const maksAchiev = [
 	"Harvard Introduction to artificial intelligence with Python (free mode)",
 	"Google Search Ads Certificate",
 	"Google Analytics Certificate",
-	"Praca jako representant developera w firmie Cordia 2024",
+	"Praca jako reprezentant developera w firmie Cordia 2024",
 	"Praca jako nauczyciel w firmie edukacyjnej Ferajna 2024"
 ];
 
