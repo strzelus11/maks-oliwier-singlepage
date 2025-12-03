@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function ContactButton({ className }) {
 	return (
-		<Link href="/offer">
+		<Link href="sign-in?course=Ko%C5%82o+olimpijskie+z+fizyki">
 			<button className={`btn-outline sign-in ${className}`}>
 				<svg
 					xmlns="http://www.w3.org/2000/svg"

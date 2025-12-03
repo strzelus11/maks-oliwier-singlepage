@@ -20,7 +20,7 @@ export default function Footer() {
 					</Link>
 				</div>
 				<div className="text-center lg:text-left">
-					&copy; Designed and developed by Jakub Strzelecki
+					&copy; Designed and developed by Jakub and Maksymilian Strzelecki
 				</div>
 			</div>
 			<div className="flex pb-3 lg:pb-0 gap-3 text-gray-400 items-center justify-center">
