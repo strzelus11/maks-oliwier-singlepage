@@ -10,8 +10,8 @@ export default function OfferCard({
 	group,
 	index,
 }) {
-    const router = useRouter();
-    
+	const router = useRouter();
+
 	const handleEnroll = () => {
 		router.push({
 			pathname: "/sign-in",
@@ -66,7 +66,7 @@ export default function OfferCard({
 									clipRule="evenodd"
 								/>
 							</svg>
-							Zajęcia Indywidualne
+							Indywidualne
 						</>
 					)}
 				</div>

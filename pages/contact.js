@@ -15,18 +15,18 @@ export default function ContactPage() {
 	const [message, setMessage] = useState("");
 	const [loading, setLoading] = useState(false);
 
-	useEffect(() => {
-		const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-		if (email !== "") {
-			if (!regex.test(email)) {
-				setEmailError(true);
-			} else {
-				setEmailError(false);
-			}
-		} else {
-			setEmailError(null);
-		}
-	}, [email]);
+	// useEffect(() => {
+	// 	const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+	// 	if (email !== "") {
+	// 		if (!regex.test(email)) {
+	// 			setEmailError(true);
+	// 		} else {
+	// 			setEmailError(false);
+	// 		}
+	// 	} else {
+	// 		setEmailError(null);
+	// 	}
+	// }, [email]);
 
 	async function sendEmail() {
 		if (name !== "" && email !== "" && message !== "" && !emailError) {
